@@ -1,0 +1,9 @@
+Durchführung der beauftragten Optimierung
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+soeben haben wir eine Optimierung Ihrer Suchkriterien für die ${recommendation_category} erstellt. Wir hoffen, dass sich dies positiv auswirken wird.
+
+${text}
+
+#include("include_footer.html.vm")

@@ -1,0 +1,9 @@
+Bestätigung der Löschung Ihrer Daten
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+mit Versand dieser Mail sind Ihre personenbezogenen Daten gelöscht.
+
+Wenn Sie erneut zu Gleichklang kommen möchten, müssen Sie sich daher komplett neu anmelden. Wir wünschen Ihnen viel Glück für Ihren weiteren Lebensweg.
+
+#include("include_footer.html.vm")

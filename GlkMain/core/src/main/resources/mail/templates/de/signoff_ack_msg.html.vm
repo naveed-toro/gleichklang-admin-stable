@@ -1,0 +1,11 @@
+Ihre Abmeldung bei Gleichklang
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+wir haben Ihre vorzeitige Abmeldung erhalten und Ihre Teilnahme bei Gleichklang beendet.
+
+${info}
+
+Wir wünschen Ihnen viel Glück für Ihren weiteren Lebensweg.
+
+#include("include_footer.html.vm")

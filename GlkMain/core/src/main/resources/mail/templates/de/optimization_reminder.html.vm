@@ -1,0 +1,18 @@
+Zahlungserinnerung für die Gleichklang-Optimierung
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+Sie haben sich für die Gleichklang-Optimierung entschieden und als Zahlungsmodus die Vorausbezahlung gewählt. Bisher konnten wir noch keinen Zahlungseingang verzeichnen, was auch zur Folge hat, dass die Optimierung noch nicht durchgeführt wird.
+Das kann verschiedene Gründe haben:
+<ul>
+    <li>Gelegentlich brauchen die Banken etwas länger, bis die Information über eine erfolgte Zahlung bei uns ankommt. Sollten Sie sicher sein, dass Sie den Betrag unter Angabe des unten aufgeführten Verwendungszwecks gezahlt haben, dann hat sich diese Mail wahrscheinlich mit dem Eingang der Zahlung überschnitten und Sie können sie als gegenstandslos betrachten.</li>
+    <li>Der von Ihnen angegebene Verwendungszweck stimmt nicht mit dem von unserem System erwarteten überein. Das hat zur Folge, dass Ihre Zahlung von dem von uns beauftragen Bezahlsystem nicht erkannt wird. Falls Sie sicher sind, die Zahlung geleistet zu haben aber doch schon recht viel Zeit vergangen ist, dann vergleichen Sie den von Ihnen angegebenen Verwendungszweck mit dem unten aufgeführten Verwendungszweck. Bitte überprüfen Sie insbesondere auch, dass die im Verwendungszweck angegebenen Sonderzeichen, also Bindestriche oder Punkte etc. auftauchen. Sollten Sie sich bei der Angabe des Verwendungszwecks vertan haben, dann kann das System die Zahlung leider nicht zuordnen. Bitte teilen Sie uns in diesem Fall das genaue Datum Ihrer Überweisung per Mail mit. Wir werden und dann um den Verbleib der Zahlung kümmern.</li>
+    <li>Sie haben die Überweisung des Betrages vergessen. Dann bitten wir Sie hiermit, diese nachzuholen.</li>
+</ul>
+Hier sind zur Erinnerung noch einmal die notwendigen Daten für die Überweisung:
+
+${paymentInfo}
+
+Bitte bedenken Sie, dass die Optimierung erst mit dem Eingang der Zahlung startet.
+
+#include("include_footer.html.vm")

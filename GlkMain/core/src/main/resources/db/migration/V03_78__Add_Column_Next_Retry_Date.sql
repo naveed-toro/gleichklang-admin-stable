@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('mail_queue_entry', 'next_retry_date', 'DATETIME');

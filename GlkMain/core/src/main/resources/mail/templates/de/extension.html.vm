@@ -1,0 +1,9 @@
+Bestätigung der Erweiterung der Gleichklang Teilnahme
+#include("include_header.html.vm")
+Hallo $!{user.firstName} $!{user.lastName},
+
+wir bedanken uns noch einmal herzlich für die Erweiterung von Gleichklang.
+
+${paymentInfo}
+
+#include("include_footer.html.vm")

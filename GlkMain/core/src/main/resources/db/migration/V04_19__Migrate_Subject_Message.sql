@@ -1,0 +1,1 @@
+UPDATE message m LEFT JOIN compmessage cm ON cm.no = m.legacy_id SET m.subject = cm.subject WHERE m.subject = '' AND cm.subject IS NOT NULL AND cm.subject <> '';

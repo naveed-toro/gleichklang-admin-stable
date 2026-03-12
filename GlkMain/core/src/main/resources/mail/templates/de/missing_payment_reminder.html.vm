@@ -1,0 +1,25 @@
+﻿Eine kurze Nachfrage zur Anmeldung/Teilnahmegebühr
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+wir freuen uns sehr, dass Sie sich für eine Teilnahme bei Gleichklang entschieden haben. Sie haben bereits alle Fragebögen ausgefüllt und können damit unmittelbar teilnehmen.
+
+Wie Sie wissen, erheben wir von allen unseren Teilnehmenden eine moderate Teilnahmegebühr, um sicherzustellen, dass nur ernsthaft an einer Vermittlung Interessierte in den Vermittlungsprozess aufgenommen werden. Dadurch entstehen einmalig hohe Vermittlungsaussichten, die Sie anderswo nicht finden werden. 
+
+Starten Sie nun in Ihr Partner- oder Freundschaftsglück und schließen Sie heute noch den Bezahlvorgang ab:
+
+Sie können sich mit Ihrer E-Mail-Adresse und Ihrem selbstgewählten Passwort einloggen und dann auswählen, auf welche Weise Sie Ihre Teilnahmegebühr entrichten möchten.
+
+<a href="https://www.gleichklang.de/teilnehmer">https://www.gleichklang.de/teilnehmer</a>
+
+E-Mail: <b>${user.email}</b>
+
+Sofern Sie des öfteren Seitenaufruf-Fehler bei der Anmeldung haben, könnte dies an Ihrem Browser liegen.
+
+Wir würden uns freuen, Sie bald bei Gleichklang begrüßen zu können und versichern Ihnen, Ihre Suche mit Kompetenz und besten Kräften zu unterstützen.
+
+Sie erhalten diese E-Mail, weil Sie sich bei Gleichklang eingetragen haben und an der Nutzung unserer psychologischen Partner- und Freundschaftsvermittlung interessiert sind. Wenn Sie keinerlei Informationen und Benachrichtigungen mehr erhalten wollen, können Sie auf den unteren Abmeldelink klicken. Wir raten hiervon ab, da Sie ansonsten über wichtige Angebote nicht mehr informiert werden:
+
+STOP MAIL: Ich möchte keine Informationen von Gleichklang mehr erhalten! <a href="${unsubscribe_url}">${unsubscribe_url}</a>
+
+#include("include_footer.html.vm")

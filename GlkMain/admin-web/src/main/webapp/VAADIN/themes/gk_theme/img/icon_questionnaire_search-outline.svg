@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="68.906px" height="67.875px" viewBox="0 0 68.906 67.875" enable-background="new 0 0 68.906 67.875" xml:space="preserve">
+<g>
+	<circle fill="#F5F7EB" cx="34.016" cy="34.016" r="33.733"/>
+	<circle fill="#37879F" cx="34.016" cy="34.016" r="24.095"/>
+</g>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="18.531" y="17.657" width="36.767" height="36.85"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#F5F7EB" stroke="#FFFFFF" stroke-miterlimit="10" d="M45.048,23.028
+		c-5.83-5.83-15.314-5.83-21.145,0s-5.83,15.314,0,21.143c5.63,5.63,14.666,5.82,20.531,0.579l1.184,1.185
+		c-0.295,0.757-0.143,1.645,0.469,2.256l6.256,6.255c0.82,0.823,2.156,0.821,2.979,0c0.822-0.822,0.822-2.157,0-2.979l-6.256-6.252
+		c-0.609-0.61-1.5-0.765-2.256-0.472l-1.184-1.184C50.868,37.694,50.675,28.657,45.048,23.028L45.048,23.028z M25.69,42.385
+		c-4.845-4.844-4.845-12.725,0-17.569c4.844-4.845,12.724-4.845,17.57,0c4.844,4.845,4.844,12.727,0,17.569
+		C38.415,47.229,30.534,47.229,25.69,42.385L25.69,42.385z M25.69,42.385"/>
+</g>
+<path fill="#F5F7EB" d="M29.969,28.321c2-1.998,4.325-3.449,6.768-4.355c-2.768-0.157-5.734,0.92-8.01,3.195
+	c-2.308,2.309-3.383,5.325-3.187,8.128C26.438,32.772,27.916,30.376,29.969,28.321L29.969,28.321z M29.969,28.321"/>
+</svg>

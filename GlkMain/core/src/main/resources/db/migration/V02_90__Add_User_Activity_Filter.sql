@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('filter', 'activity_category', 'VARCHAR(255)');

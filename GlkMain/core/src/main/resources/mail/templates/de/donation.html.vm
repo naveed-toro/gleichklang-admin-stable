@@ -1,0 +1,11 @@
+Infos für Ihre Lebenslang-Option
+#include("include_header.html.vm")
+Hallo $!{user.firstName} $!{user.lastName},
+
+wir bedanken uns noch einmal herzlich für Ihre Unterstützung von Gleichklang.
+Wir werden die Buchung Ihrer Lebenslang-Option bei künftigen Verlängerungen berücksichtigen.
+Sie zahlen damit zukünftig nur noch einen symbolischen Euro pro Jahr, erstmalig in einem Jahr.
+
+${paymentInfo}
+
+#include("include_footer.html.vm")

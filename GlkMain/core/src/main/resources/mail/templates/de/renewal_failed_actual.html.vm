@@ -1,0 +1,13 @@
+Die Ausführung der automatischen Verlängerung ist fehlgeschlagen
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+die Verlängerung ihrer Gleichklang Mitgliedschaft ist fehlgeschlagen. Vielleicht haben sich Ihre Abbuchungsdaten geändert? Bitte überweisen Sie den Betrag von ${amount}, damit ihre Mitgliedschaft wieder aktiviert wird.
+
+${paymentInfo}
+
+Die Überweisungsdaten finden Sie auch in Ihrem Teilnahmebereich unter "Teilnahmeart und Wechsel", "Gebührenübersicht". Hier geht es zum Login:
+
+<a href="https://www.gleichklang.de/teilnehmer/login/">https://www.gleichklang.de/teilnehmer/login/</a>
+
+#include("include_footer.html.vm")

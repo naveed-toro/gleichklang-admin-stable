@@ -1,0 +1,10 @@
+Sie haben einen neuen Fußstapfen erhalten
+#include("include_header.html.vm")
+Hallo $!{user.firstName} $!{user.lastName},
+
+Sie haben von ${pseudonyms} einen neuen Fußstapfen erhalten.
+Bitte loggen Sie sich ein und schauen sich das Profil und den Fußstapfen an.
+
+Wenn Sie keine Benachrichtigungen über den Erhalt von Fußstapfen haben wollen, tragen Sie das bitte in Ihrem Teilnahmebereich unter Meine Teilnahme/Persönliche Daten/Nachrichten ein.
+
+#include("include_footer.html.vm")

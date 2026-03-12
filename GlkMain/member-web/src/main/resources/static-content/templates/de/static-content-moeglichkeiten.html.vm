@@ -1,0 +1,85 @@
+<style>
+	/* Hier werden alles Style-Informationen hinterlegt. */   
+	
+	.static-container-content .moeglichkeiten {         
+		 font: 400 16px/1.6 "Roboto", normal;
+     background: #fff;
+	 padding-bottom: 5px;
+	 margin-bottom: 10px;
+	}
+	
+	.static-container-content .moeglichkeiten h1 {
+		font-size: x-large;
+    font-weight: 400;
+    color: #003e69;
+    background: #55a6ba url('VAADIN/static-images/glk_headline.png') no-repeat 20px 13px;
+    padding-left: 50px;
+    line-height: 50px;
+	}
+	
+	.static-container-content .moeglichkeiten p {
+    padding:10px;
+    margin:0;
+		font-size: 16px;
+    font-weight: 400;
+		color: #6b6b6b;
+	}
+  
+	.static-container-content .moeglichkeiten p a {
+    font-size: 18px;
+    display: block;
+    text-decoration: none;  
+  }  
+	.static-container-content .moeglichkeiten p a:hover {
+    text-decoration: underline;
+   }
+  .static-container-content .moeglichkeiten .aGreen {
+    color: #79983e;
+  } 
+  .static-container-content .moeglichkeiten .aTurkise {
+    color: #014b4b;
+  }
+  .static-container-content .moeglichkeiten .aPink {
+    color: #de5c56;
+  }
+  .static-container-content .moeglichkeiten .aOrange {
+    color: #e38600;
+  }
+	
+	.static-container-content .moeglichkeiten .color-box {
+		background-color: #eff0ed;
+    margin: 10px 10px 5px 10px;
+	}
+
+</style>
+<div class="static-container-content">
+	<div class="moeglichkeiten">
+	<!-- Innerhalb dieses Containers kann der Inhalt frei gestaltet werden. -->
+	
+	<h1>M&ouml;glichkeiten</h1>
+
+	<div class="color-box">
+    	<p><a class="aOrange" href="https://www.gleichklang.de/optimierung/" target="_blank">Unterstützung anfordern <span class="aOrange" style="font-family: FontAwesome;">&#xf061;</span></a>
+       Ein Team-Mitglied berät Sie, wie Sie effektiver bei Ihrer Suche vorgehen können.
+      </p>
+      </div>
+  
+  <div class="color-box">
+	<p><a class="aGreen" href="#!SUBSCRIPTION/upgrade_offers">Lebenslang dabei sein <span class="aGreen" style="font-family: FontAwesome;">&#xf061;</span></a>
+  Werden Sie Gleichklang-Mitglied auf Lebenszeit. 
+  </p>
+  </div>  
+  
+  <div class="color-box">
+	<p><a class="aTurkise" href="https://de.research.net/r/effekte" target="_blank">Vermittlungschancen steigern <span class="aTurkise" style="font-family: FontAwesome;">&#xf061;</span></a>
+  Unser Online-Tool zeigt Ihnen, wie Sie schneller einen Partner finden k&ouml;nnen.
+  </p>
+  </div>
+  
+  <div class="color-box">
+	<p><a class="aPink" href="http://www.gleichklang-seminare.de/" target="_blank">Beziehungsfertigkeiten erlernen <span class="aPink" style="font-family: FontAwesome;">&#xf061;</span></a>
+  Verbessern Sie in diesem Seminar Ihre Beziehungsfertigkeiten.
+  </p>
+  </div>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+Rückbuchung Ihrer Teilnahmegebühr wegen fehlerhafter Kontendaten
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+im Rahmen der Bezahlung Ihrer Teilnahmegebühr am ${beginDate} ist es leider auf Grund fehlerhafter Kontendaten zu einer Rückbuchung gekommen.
+
+Damit Sie dennoch an der Teilnahmvermittlung bei Gleichklang teilnehmen können, bieten wir Ihnen an, den zurückgebuchten Betrag per Vorabüberweisung zu begleichen.
+
+${paymentInfo}
+
+Sollte eine Vorabüberweisung für Sie nicht möglich sein, nehmen Sie bitte mit uns Kontakt auf.
+
+#include("include_footer.html.vm")

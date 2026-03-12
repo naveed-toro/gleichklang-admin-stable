@@ -1,0 +1,1 @@
+CALL CREATE_UNIQUE_INDEX('source_user_id_target_user_id_category', 'match_', 'source_user_id, target_user_id, category');

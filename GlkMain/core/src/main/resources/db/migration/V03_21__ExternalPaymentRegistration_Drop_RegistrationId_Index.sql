@@ -1,0 +1,2 @@
+CALL DROP_INDEX('external_payment_registration_registration_id', 'external_payment_registration');
+CALL CHANGE_COLUMN('external_payment_registration', 'registration_id', 'registration_id', 'VARCHAR(255)');

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="Persistence">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Components"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Components">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="Component"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Component">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="Attribute"/>
+            </xs:sequence>
+            <xs:attribute name="AllowMissingAttributes"/>
+            <xs:attribute name="Class" use="required"/>
+            <xs:attribute name="Import" use="required"/>
+            <xs:attribute name="Name" use="required"/>
+            <xs:attribute name="Service" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Attribute">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element ref="Options"/>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="Option"/>
+            </xs:choice>
+            <xs:attribute name="Auswertung"/>
+            <xs:attribute name="DataType" use="required"/>
+            <xs:attribute name="ForeignType"/>
+            <xs:attribute name="Hidden"/>
+            <xs:attribute name="Import"/>
+            <xs:attribute name="Insert"/>
+            <xs:attribute name="Name" use="required"/>
+            <xs:attribute name="NotNull"/>
+            <xs:attribute name="PlusMinus"/>
+            <xs:attribute name="Rules"/>
+            <xs:attribute name="ScaleAnswerFormat"/>
+            <xs:attribute name="Set"/>
+            <xs:attribute name="SetNew"/>
+            <xs:attribute name="Skalentyp"/>
+            <xs:attribute name="SubQuest"/>
+            <xs:attribute name="SupressNew"/>
+            <xs:attribute name="Teilnahmeart"/>
+            <xs:attribute name="Unique"/>
+            <xs:attribute name="Wichtung"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Options">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="Option"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Option">
+        <xs:complexType>
+            <xs:attribute name="Value" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

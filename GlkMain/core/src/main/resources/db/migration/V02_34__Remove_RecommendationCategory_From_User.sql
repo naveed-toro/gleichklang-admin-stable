@@ -1,0 +1,1 @@
+CALL DROP_COLUMN('user_', 'recommendation_category');

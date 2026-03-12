@@ -1,0 +1,1 @@
+ALTER TABLE message MODIFY body longtext;

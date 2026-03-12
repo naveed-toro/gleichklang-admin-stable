@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('relationship', 'last_viewed_date', 'DATETIME');

@@ -1,0 +1,13 @@
+Message from Gleichklang
+<body>
+<div style="font-family:Tahoma,Verdana,Geneva,Lucida,Helvetica,Arial,sans-serif;font-size:16px;border:solid 1px #520010;padding:20px;line-height:140%">
+Dear ${senderName},
+
+a member f the support team of has written to you an important message about your account.
+
+The message you find in your internal login-area of Gleichklang.
+
+Please log in at Gleichklang and read the message:
+<a href="https://gleichklang.de/teilnehmer/?login">https://gleichklang.de/teilnehmer/?login</a>
+
+Best regards${signature}

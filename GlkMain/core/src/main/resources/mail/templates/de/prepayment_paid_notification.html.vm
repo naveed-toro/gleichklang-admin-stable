@@ -1,0 +1,12 @@
+Bestätigung des Zahlungseingangs und Freischaltung der Vermittlung
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+Sie haben sich am ${beginDate} für die Teilnahme bei Gleichklang angemeldet und als Zahlungsmodus die Vorausbezahlung gewählt.
+Ihre Zahlung in Höhe von ${amount} hat uns nun erreicht und Sie werden damit für die Vermittlung freigeschaltet.
+
+Was die ersten Vorschläge angeht, so bitten wir um etwas Geduld. Die Ableitung von Vorschlägen kann bis zu 12 Stunden in Anspruch nehmen.
+
+Wir bedanken uns herzlich und wünschen Ihnen viel Erfolg im Rahmen der Teilnahme bei Gleichklang.
+
+#include("include_footer.html.vm")

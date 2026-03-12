@@ -1,0 +1,8 @@
+ALTER TABLE message
+	DROP COLUMN category,
+	CHANGE COLUMN id id BIGINT NOT NULL AUTO_INCREMENT FIRST,
+	ADD reply_to_message_id BIGINT,
+	ADD FOREIGN KEY (reply_to_message_id) REFERENCES message (id);
+
+ALTER TABLE envelope
+	CHANGE COLUMN id id BIGINT NOT NULL AUTO_INCREMENT FIRST;

@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('file', 'description', 'VARCHAR(255)');

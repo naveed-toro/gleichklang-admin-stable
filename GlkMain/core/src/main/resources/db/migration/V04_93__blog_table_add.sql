@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS blog(
+   id       BIGINT NOT NULL AUTO_INCREMENT,
+   title    VARCHAR(80) DEFAULT NULL,
+   body     text,
+   link     VARCHAR(80) DEFAULT NULL,
+   imageUrl VARCHAR(80) DEFAULT NULL,
+   userId   BIGINT DEFAULT NULL,
+  PRIMARY KEY (id)
+);

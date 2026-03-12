@@ -1,0 +1,1 @@
+CALL CREATE_INDEX('user_activity', 'user_activity_log', 'user_activity');

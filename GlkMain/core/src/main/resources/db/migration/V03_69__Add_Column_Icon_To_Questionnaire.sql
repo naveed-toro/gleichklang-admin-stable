@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('questionnaire', 'icon', 'VARCHAR(255)');

@@ -1,0 +1,1 @@
+ALTER TABLE blog ADD COLUMN language varchar(20) default null;

@@ -1,0 +1,1 @@
+ALTER TABLE payment MODIFY external_reference_id varchar(255);

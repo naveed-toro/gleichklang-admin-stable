@@ -1,0 +1,23 @@
+Eine kurze Nachfrage zur Anmeldung/Datenerhebung
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+wir freuen uns sehr, dass Sie sich für eine Teilnahme bei Gleichklang entschieden haben. Einige der Fragebögen für die Vermittlung von Partnerschaften bzw. Freundschaften sind noch unausgefüllt geblieben. Damit wir Sie in die Datei für die Vermittlung aufnehmen können, ist es essentiell, dass Sie die Angaben komplettieren.
+
+Sie können sich mit Ihrer E-Mail-Adresse und Ihrem selbstgewählten Passwort einloggen, um die weiteren Fragebögen auszufüllen.
+
+<a href="https://www.gleichklang.de/teilnehmer">https://www.gleichklang.de/teilnehmer</a>
+E-Mail: <b>${user.email}</b>
+
+Wir können Ihnen versichern, dass wir Sie nach besten Kräften bei der Suche unterstützen werden.
+
+Wir freuen uns, Sie bald bei Gleichklang begrüßen zu können!
+
+Sie erhalten diese E-Mail, weil Sie sich bei Gleichklang eingetragen haben und an der Nutzung unserer psychologischen Partner- und Freundschaftsvermittlung interessiert sind. Wenn Sie keinerlei Informationen und Benachrichtigungen mehr erhalten wollen, können Sie auf den unteren Abmeldelink klicken. Wir raten hiervon ab, da Sie ansonsten über wichtige Angebote nicht mehr informiert werden:
+
+
+<b>Falls Sie gar nicht mehr Mitglied bei Gleichklang werden wollen, so antworten Sie auf diese Nachricht und wir tragen Sie aus dem Verteiler aus.</b>
+
+STOP MAIL: Ich möchte keine Informationen von Gleichklang mehr erhalten! <a href="${unsubscribe_url}">${unsubscribe_url}</a>
+
+#include("include_footer.html.vm")

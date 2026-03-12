@@ -1,0 +1,7 @@
+Bestätigung der Rückerstattung
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+Ihre Zahlung in Höhe von ${amount} wurde von uns rückerstattet.
+
+#include("include_footer.html.vm")

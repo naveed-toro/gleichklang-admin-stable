@@ -1,0 +1,11 @@
+Mitteilung über automatische Verlängerung
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+Soeben ist vereinbarungsgemäß die automatische Verlängerung Ihrer Teilnahme bei Gleichklang eingetreten. Die automatische Verlängerung tritt immer dann ein, wenn bis zum Ende eines gebuchten Zeitraumes keine Kündigung erfolgte.
+
+Wir freuen uns, dass Sie sich für eine Fortsetzung Ihrer Mitgliedschaft bei Gleichklang entschieden haben. Der gebuchte Verlängerungszeitraum beträgt ${durationInMonths} Monate mit einer Verlängerungsgebühr von ${amount}. Wenn keine Kündigung eingeht, wird sich nach Ablauf dieser Teilnahmezeit Ihre Mitgliedschaft um weitere ${autoRenewalDurationInMonths} Monate verlängern.
+
+Wir wünschen Ihnen viel Erfolg bei Gleichklang!
+
+#include("include_footer.html.vm")

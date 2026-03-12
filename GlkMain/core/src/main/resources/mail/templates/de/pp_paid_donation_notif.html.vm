@@ -1,0 +1,8 @@
+Bestätigung des Zahlungseingangs für die Zuwendung an Gleichklang
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+wir haben Ihre Zuwendung an Gleichklang erhalten und bedanken uns herzlich für die Zahlung.
+Die Zahlung wird bei künftigen Verlängerungen berücksichtigt.
+
+#include("include_footer.html.vm")

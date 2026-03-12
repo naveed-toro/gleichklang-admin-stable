@@ -1,0 +1,17 @@
+Bisher keine Vorschläge?
+#include("include_header.html.vm")
+Hallo $!{user.firstName} $!{user.lastName},
+
+wir haben festgestellt, dass Sie bisher noch keinen Vermittlungsvorschlag von Gleichklang erhalten haben.
+
+Die Ursache hierfür liegt in der Kombination der Selektionskriterien (z.B. räumlicher Suchort,  Alter etc.) mit den Ergebnissen der Ähnlichkeitsanalyse. Wir gehen bei der Vermittlung nach einem zweigestuften stringenten Prinzip vor: Zuerst werden alle Teilnehmer als Match füreinander ausgeschlossen, die bezüglich der Seletionskriterien keine Passung aufweisen. Dies bedeutet, dass z.B. alle diejenigen unserer anderen Teilnehmenden als Match für Sie ausgeschlossen werden, die nicht in dem von Ihnen angegebenen räumlichen Suchraum oder Altersbereich liegen. In einem zweiten Schritt wird die Ähnlichkeit im Gesamtprofil der übriggebliebenen Teilnehmenden verglichen. Es erfolgt nur dann ein Vorschlag, wenn eine ungewöhnlich hohe Ähnlichkeit vorliegt.
+
+Grundsätzlich ist unser Vorgehen bestens geeignet, wirklich passende Vorschläge unterbreiten zu können. Bei bisher 2/3 unserer Teilnehmer ist dies auch bereits gelungen. Zwischen diesen Teilnehmenden besteht bereits eine lebendige Kommunikation, wie wir anhand der Aktivität unseres Chiffre-Systems ersehen können. Leider konnten wir Ihnen aber bisher aus den genannten Gründen noch keinen Vorschlag unterbreiten.
+
+Auch wenn Sie derzeit vielleicht enttäuscht sind, gehen wir trotzdem davon aus, dass sich diese Situation ändern wird. Wir verzeichnen täglich den Eingang neuer Teilnehmender. Es ist eine Frage der Zeit bis sich eine Passung auch für Sie ergibt. Es besteht nicht das Risiko, dass Ihre Teilnahme ausläuft, ohne dass Sie Vorschläge erhalten haben.
+
+Wenn Sie den Prozess etwas beschleunigen wollen, können Sie gegebenenfalls auch jederzeit in Ihrem Teilnahmebereich Ihre Selektionskriterien flexibler gestalten (z.B. größerer räumlicher Bereich, weiterer Altersbereich etc.).
+
+Wir bedauern es, dass wir Ihnen bisher noch keinen Vorschlag unterbreiten konnten. Wir sind aber zuversichtlich, dass sich die Situation mit der Zeit verändern wird. Langfristig haben Sie bei uns ohne Zweifel hervorragende Chancen auf Erfolg. Bitte haben Sie daher noch ein wenig Geduld.
+
+#include("include_footer.html.vm")

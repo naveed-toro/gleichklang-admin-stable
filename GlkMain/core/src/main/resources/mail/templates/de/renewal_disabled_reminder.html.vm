@@ -1,0 +1,22 @@
+Ablauf Ihrer Teilnahmezeit bei Gleichklang
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+mit dieser Nachricht möchten wir Sie darüber informieren, dass Ihre Teilnahme bei Gleichklang am ${endDate} ausläuft. Sie haben die automatische Verlängerung im Teilnahmebereich ausgestellt, so dass diese nicht erfolgen wird.
+
+Wir würden uns sehr freuen, wenn Sie doch bei uns bleiben würden. Nach wie vor gilt unsere sehr faire und geringe Gebühr von lediglich ${amount} für ${durationInMonths} Monate an. Das sind also weniger als ${monthAmount} für einen Monat. Nutzen Sie weiterhin Gleichklang, um Ihre Partner- und/oder Freundschaftsvermittlung zum Erfolg zu bringen.
+
+Bitte bedenken Sie, dass ein Wiedereinstieg nach einer Kündigung aufwändiger ist, als wenn Sie jetzt das Angebot der Verlängerung annehmen. Wir raten Ihnen daher, sich jetzt doch noch einmal für eine Verlängerung zu entscheiden. Sie werden kein ähnlich attraktives Angebot bei einem anderen Anbieter finden!
+
+Sollten Sie sich dennoch für eine Beendigung der Teilnahme entscheiden, dann wird Ihr Account nicht sofort deaktiviert, sondern Sie erhalten ab dem ${endDate} erst einmal keine Vermittlungsvorschläge mehr. Die Deaktivierung Ihres Accounts erfolgt dann erst am ${expirationDate}. Wir bieten diese Übergangszeit an, damit Sie noch die Zeit haben, eventuelle Kommunikation mit vorgeschlagenen Teilnehmern entsprechend abzuschliessen.
+
+Außerdem haben Sie bis zu diesem Zeitpunkt noch die Gelegenheit, sich noch für unser Verlängerungsangebot zu entscheiden, in dem Sie die automatische Verlängerung wieder aktivieren. Dies können Sie ganzleicht in Ihrem Teilnahmebereich tun.
+
+Wir würden uns sehr freuen, wenn Sie weiterhin Mitglied bei Gleichklang bleiben.
+
+Noch etwas:
+
+Es kann passieren, dass Nachrichten von Ihnen an uns oder umgekehrt uns nicht erreichen, weil diese z.B. in einem Spam-Filter verschwinden. Deshalb ist es wichtig, dass Sie unsere Nachricht, sollte Sie im Spam-Ordner sein, sogleich als Nicht-Spam markieren. Ebenso wichtig ist es, dass Sie uns in Ihre Adressbuch aufnehmen. Durch beide Maßnahmen kann gewährleistet werden, dass keine Nachrichten verloren gehen. Am besten aber ist es, wenn Sie sich einfach eine kostenlose Gleichklang E-mail einrichten, mit der wir uns wechselseitig immer zu 100% erreichen und die Sie auch in jedem anderen Kontext lebenslang jederzeit verwenden können. Hier können Sie sich so eine Gratis-Mail holen:
+<a href="https://www.gleichklang-mail.de">https://www.gleichklang-mail.de</a>
+
+#include("include_footer.html.vm")

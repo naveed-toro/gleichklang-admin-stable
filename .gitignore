@@ -1,0 +1,9 @@
+/GlkMain/admin-web/target/
+/GlkMain/admin-web/.idea
+/GlkMain/admin-web/admin-web.iml
+/GlkMain/member-web/member-web.iml
+/GlkMain/.idea
+/GlkMain/.idea/*
+/GlkMain/member-web/target/
+/GlkMain/core/target/
+/.idea/

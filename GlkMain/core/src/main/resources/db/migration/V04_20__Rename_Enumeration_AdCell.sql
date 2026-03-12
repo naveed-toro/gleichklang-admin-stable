@@ -1,0 +1,1 @@
+UPDATE affiliate_payment_state SET affiliate_partner = 'ADCELL' WHERE affiliate_partner = 'ADSELL';

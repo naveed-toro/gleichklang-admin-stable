@@ -1,0 +1,16 @@
+Ihre lebenslange Option
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+Sie haben sich am ${beginDate} für die lebenslange Option bei bei Gleichklang angemeldet und als Zahlungsmodus die Vorausbezahlung gewählt. Bisher konnten wir noch keinen Zahlungseingang verzeichnen, was auch zur Folge hat, dass die Option noch nciht begonnen hat.
+Das kann verschiedene Gründe haben:
+
+Gelegentlich brauchen die Banken etwas länger, bis die Information über eine erfolgte Zahlung bei uns ankommt. Sollten Sie sicher sein, dass Sie den Betrag unter Angabe des unten aufgeführten Verwendungszwecks gezahlt haben, dann hat sich diese Mail wahrscheinlich mit dem Eingang der Zahlung überschnitten und Sie können sie als gegenstandslos betrachten.
+Der von Ihnen angegebene Verwendungszweck stimmt nicht mit dem von unserem System erwarteten überein. Das hat zur Folge, dass Ihre Zahlung von dem von uns beauftragen Bezahlsystem nicht erkannt wir. Falls Sie sicher sind, die Zahlung geleistet zu haben aber doch schon recht viel Zeit vergangen ist, dann überprüfen Sie den von Ihnen angegebenen Verwendungszweck mit dem unten aufgeführten Verwendungszweck. Bitte überprüfen Sie insbesondere auch, dass die im Verwendungszweck angegebenen Sonderzeichen wie Bindestriche oder Punkte auftauchen. Sollten Sie sich bei der Angabe des Verwendungszwecks vertan haben, dann kann das System die Zahlung leider nicht zuordnen. Bitte teilen Sie uns in diesem Fall das genaue Datum Ihrer Überweisung per Mail mit. Wir werden und dann um den Verbleib der Zahlung kümmern.
+Sie haben die Überweisung des Betrages vergessen. Dann bitten wir Sie hiermit, diese nachzuholen.
+
+Hier sind zur Erinnerung noch einmal die notwendigen Daten für die Überweisung:
+
+${paymentInfo}
+
+#include("include_footer.html.vm")

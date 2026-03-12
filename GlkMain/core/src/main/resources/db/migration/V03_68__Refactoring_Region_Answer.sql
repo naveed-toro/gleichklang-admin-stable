@@ -1,0 +1,1 @@
+UPDATE answer SET dtype = 'RegionAnswer' WHERE dtype = 'PartnerRegionAnswer';

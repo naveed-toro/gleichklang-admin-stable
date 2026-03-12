@@ -1,0 +1,16 @@
+Verlängerung Ihrer Teilnahme bei Gleichklang
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+mit dieser Nachricht möchten wir Sie darüber informieren, dass die automatische Verlängerung Ihrer Teilnahme um ${durationInMonths} Monate am ${autoRenewalBeginDate} erfolgen wird.
+
+Für die automatische Verlängerung fällt nach wie vor die sehr faire Gebühr von lediglich ${amount} für weitere ${durationInMonths} Monate an. Das sind also weniger als ${monthAmount} im Monat. Nutzen Sie diesen einmalig günstigen Verlängerungstarif und nehmen Sie weiterhin an der Gleichklang Partner- und Freundschaftsvermittlung teil.
+
+Wir freuen uns, dass Sie Mitglied bei uns sind. Wir sind sicher, dass Sie bei uns beste Chancen auf Erfolg haben.
+
+Noch etwas:
+
+Es kann passieren, dass Nachrichten von Ihnen an uns oder umgekehrt uns nicht erreichen, weil diese z.B. in einem Spam-Filter verschwinden. Deshalb ist es wichtig, dass Sie unsere Nachricht, sollte Sie im Spam-Ordner sein, sogleich als Nicht-Spam markieren. Ebenso wichtig ist es, dass Sie uns in Ihre Adressbuch aufnehmen. Durch beide Maßnahmen kann gewährleistet werden, dass keine Nachrichten verloren gehen. Am besten aber ist es, wenn Sie sich einfach eine kostenlose Gleichklang E-mail einrichten, mit der wir uns wechselseitig immer zu 100% erreichen und die Sie auch in jedem anderen Kontext lebenslang jederzeit verwenden können. Hier können Sie sich so eine Gratis-Mail holen:
+<a href="https://www.gleichklang-mail.de">https://www.gleichklang-mail.de</a>
+
+#include("include_footer.html.vm")

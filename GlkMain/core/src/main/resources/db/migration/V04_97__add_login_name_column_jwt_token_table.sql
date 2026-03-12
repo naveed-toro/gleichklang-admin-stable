@@ -1,0 +1,2 @@
+ALTER TABLE jwt_token
+ADD COLUMN login_name VARCHAR(255);

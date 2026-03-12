@@ -1,0 +1,74 @@
+<style>
+	/* Hier werden alles Style-Informationen hinterlegt. */   
+	.static-container-content .aktuelles {         
+		 font: 400 16px/1.6 "Roboto", normal;
+     background: #fff;
+	 padding-bottom: 10px;
+	 margin-bottom: 10px;
+	}
+	
+	.static-container-content .aktuelles h1 {
+		font-size: x-large;
+    font-weight: 400;
+    color: #a06101;
+    background: #ebb938 url('VAADIN/static-images/glk_headline.png') no-repeat 20px 13px;
+    padding-left: 50px;
+    line-height: 50px;
+	}
+	
+	.static-container-content .aktuelles p {
+    padding:4px 10px;
+    margin:0;
+		font-size: 16px;
+    font-weight: 400;
+		color: #6b6b6b;
+	}
+  
+	.static-container-content .aktuelles p a {
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+  }  
+	.static-container-content .aktuelles p a:hover {
+    text-decoration: underline;
+   }
+   .static-container-content .aktuelles .aYellow {
+    color: #ebb938;    
+   }
+  .static-container-content .aktuelles p a.aSmall {
+		font-size: 16px;
+    display:inline;
+  } 
+	.static-container-content .aktuelles .buttonYellow {
+    padding:10px 20px;    
+    background: #ebb938; 
+    color:#fff;
+    margin:10px 0; 
+    font-weight: 500;
+  }
+	.static-container-content .aktuelles .margin-box {
+    margin: 10px 10px 5px 10px;
+	}
+
+</style>
+<div class="static-container-content">
+	<div class="aktuelles">
+	<!-- Innerhalb dieses Containers kann der Inhalt frei gestaltet werden. -->
+	
+	<h1>Aktuelles</h1>
+  
+  <div class="margin-box">
+	<p><a class="aYellow" href="https://blog.gleichklang.de/" target="_blank">Gleichklang Blog</a>
+  Aktuelle Informationen zu Partnersuche, Psychologie und Gleichklang finden Sie im Gleichklang Blog <a href="https://blog.gleichklang.de/" class="aYellow aSmall" target="_blank">[hier lesen]</a>.
+  </p>
+  <p>
+   Au&szlig;erdem finden Sie bei uns regelm&auml;&szlig;ig
+  <a class="buttonYellow" href="https://www.gleichklang.de/gleichklang-umfragen/" target="_blank"><span style="font-family: FontAwesome; color: #fff;">&#xf061;</span> aktuelle Umfragen und Studien</a>
+  rund um das Thema Partnerschaft, Partnerb&ouml;rsen, Sexualit&auml;t und andere Themen, die f&uuml;r &ouml;kologisch und sozial engagierte Menschen interessant sind.
+  </p>
+  <p>
+  Wir w&uuml;rden uns freuen, wenn Sie ab und zu vorbei schauen und vielleicht auch an den Umfragen teilnehmen.
+  </p>
+  </div>
+	</div>
+</div>

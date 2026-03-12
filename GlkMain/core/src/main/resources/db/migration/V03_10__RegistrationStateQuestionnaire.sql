@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('user_registration_state', 'questionnaire_id', 'bigint(20) DEFAULT NULL');

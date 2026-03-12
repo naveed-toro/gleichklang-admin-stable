@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('filter', 'number_value', 'BIGINT');

@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('address', 'tmp_zip', 'VARCHAR(255) DEFAULT NULL');

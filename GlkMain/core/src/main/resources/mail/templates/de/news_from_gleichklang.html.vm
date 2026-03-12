@@ -1,0 +1,10 @@
+Neuigkeiten von Gleichklang
+#include("include_header.html.vm")
+
+Hallo $!{user.firstName} $!{user.lastName}, es gibt Neuigkeiten von Gleichklang!
+
+${news}
+
+STOP MAIL: Ich möchte keine Neuigkeiten mehr erhalten! <a href="${unsubscribe_url}">${unsubscribe_url}</a>
+
+#include("include_footer.html.vm")

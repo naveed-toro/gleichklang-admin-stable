@@ -1,0 +1,7 @@
+Bestätigung des Zahlungseingangs für die Optimierung der Suchkriterien
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+wir haben Ihre Zahlung für die Optimierung der Suchkriterien bei Gleichklang erhalten.
+
+#include("include_footer.html.vm")

@@ -1,0 +1,1 @@
+UPDATE i18n SET i18n_value = REPLACE(REPLACE(i18n_value, '[<', '<'), '>]', '>');

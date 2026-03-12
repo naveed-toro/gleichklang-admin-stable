@@ -1,0 +1,3 @@
+UPDATE relationship
+SET footprint = "GREETING_IN_BETWEEN"
+WHERE footprint IN ("CUDDLE", "WISH_TO_MEET", "INTELLIGENT", "NICE_EYES", "SYMPATHETIC");

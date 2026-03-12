@@ -1,0 +1,9 @@
+Bestätigung des Zahlungseingangs zur Kostenerstattung wegen Rückbuchung
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+wir haben Ihre Kostenrückerstattung wegen Rückbuchung in Höhe von ${amount} erhalten und bedanken uns herzlich für die Zahlung.
+
+Wir wünschen Ihnen weiterhin alles Gute.
+
+#include("include_footer.html.vm")

@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('user_', 'confirmation_date', 'DATETIME AFTER confirmation_ip');

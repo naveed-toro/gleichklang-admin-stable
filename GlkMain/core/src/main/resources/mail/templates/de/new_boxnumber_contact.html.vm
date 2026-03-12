@@ -1,0 +1,12 @@
+Neue Chiffre-Nachricht
+#include("include_header.html.vm")
+Hallo ${receiver.alias},
+
+Sie haben eine neue Chiffre-Nachricht von <b>${sender.alias}</b> (Rubrik ${recommendation_category}) erhalten.
+
+Um die Nachricht lesen zu können, loggen Sie sich mit Ihrer E-Mail-Adresse und Ihrem Passwort in unseren Teilnahmebereich ein und wählen im Menü Meine Teilnahme - Nachrichten aus:
+<a href="https://www.gleichklang.de/teilnehmer">https://www.gleichklang.de/teilnehmer</a>
+
+Wenn Sie keine Benachrichtigungen über den Erhalt Chiffre-Nachrichten haben wollen, tragen Sie das bitte in Ihrem Teilnahmebereich unter Meine Teilnahme/Persönliche Daten/Nachrichten ein.
+
+#include("include_footer.html.vm")

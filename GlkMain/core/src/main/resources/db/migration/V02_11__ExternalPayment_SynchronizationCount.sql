@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('payment', 'synchronization_count', 'INT NOT NULL DEFAULT 0');

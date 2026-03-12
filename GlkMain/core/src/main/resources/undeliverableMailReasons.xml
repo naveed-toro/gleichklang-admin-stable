@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:map id="undeliverableMailReasonPatterns"
+              key-type="java.util.regex.Pattern"
+              value-type="de.binaerebauten.gleichklang.core.model.mail.UndeliverableMailReason">
+        <entry value="MAILBOX_FULL" key="mailbox is full"/>
+        <entry value="MAILBOX_FULL" key="mailbox.*?is full"/>
+        <entry value="MAILBOX_FULL" key="exceeded"/>
+        <entry value="MAILBOX_FULL" key="exhausted"/>
+        <entry value="MAILBOX_FULL" key="ueberschritten"/>
+        <entry value="MAILBOX_FULL" key="allowed storage space"/>
+        <entry value="MAILBOX_FULL" key="too many messages"/>
+        <entry value="MAILBOX_FULL" key="viele mails"/>
+        <entry value="MAILBOX_FULL" key="over quota"/>
+        <entry value="MAILBOX_FULL" key="mailbox over"/>
+
+        <entry value="UNROUTABLE_ADDRESS" key="550.*?Unrouteable address"/>
+        <entry value="UNROUTABLE_ADDRESS" key="unrouteable"/>
+
+        <entry value="RELAY_ACCESS_DENIED" key="554.*?Relay access denied"/>
+
+        <entry value="DOMAIN_NOT_FOUND" key="450.*?Domain not found"/>
+
+        <entry value="INVALID_ADDRESS" key="550.*?: invalid address"/>
+        <entry value="INVALID_ADDRESS" key="550.*?User unknown"/>
+        <entry value="INVALID_ADDRESS" key="550.*?Benutzer nicht bekannt"/>
+        <entry value="INVALID_ADDRESS" key="unknown"/>
+        <entry value="INVALID_ADDRESS" key="unbekannt"/>
+        <entry value="INVALID_ADDRESS" key="disabled"/>
+        <entry value="INVALID_ADDRESS" key="discontinued"/>
+        <entry value="INVALID_ADDRESS" key="doesn't have"/>
+        <entry value="INVALID_ADDRESS" key="does.*?have"/>
+        <entry value="INVALID_ADDRESS" key="invalid"/>
+        <entry value="INVALID_ADDRESS" key="not found"/>
+        <entry value="INVALID_ADDRESS" key="not.*?found"/>
+        <entry value="INVALID_ADDRESS" key="no mailbox"/>
+        <entry value="INVALID_ADDRESS" key="no such user"/>
+        <entry value="INVALID_ADDRESS" key="such user"/>
+        <entry value="INVALID_ADDRESS" key="does not exist"/>
+        <entry value="INVALID_ADDRESS" key="deactivated mailbox"/>
+        <entry value="INVALID_ADDRESS" key="mailbox unavailable"/>
+        <entry value="INVALID_ADDRESS"
+               key="Recipient address rejected: Access denied"/>
+        <entry value="INVALID_ADDRESS" key="Recipient address rejected: aol."/>
+
+        <entry value="SPAM_FILTER" key="Spam"/>
+        <entry value="SPAM_FILTER" key="blocked"/>
+        <entry value="SPAM_FILTER" key="greylist"/>
+        <entry value="SPAM_FILTER" key="spamming"/>
+        <entry value="SPAM_FILTER" key="detected"/>
+        <entry value="SPAM_FILTER" key="geblockt"/>
+        <entry value="SPAM_FILTER" key="78.46.38.85"/>
+        <entry value="SPAM_FILTER" key="46.4.51.148"/>
+    </util:map>
+</beans>

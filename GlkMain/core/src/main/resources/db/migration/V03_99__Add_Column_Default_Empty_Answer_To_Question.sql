@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('question', 'default_choice_id', 'BIGINT');

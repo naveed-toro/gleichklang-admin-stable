@@ -1,0 +1,8 @@
+Thank you for using gleichklang
+<body>
+<div style="font-family:Tahoma,Verdana,Geneva,Lucida,Helvetica,Arial,sans-serif;font-size:16px;border:solid 1px #520010;padding:20px;line-height:140%">
+Guten Tag ${user.alias},
+
+Have a great life ahead.
+
+${signature}

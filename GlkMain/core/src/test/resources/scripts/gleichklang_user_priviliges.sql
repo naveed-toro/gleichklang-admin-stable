@@ -1,0 +1,1 @@
+GRANT ALL PRIVILEGES ON `gleichklang_h2_schema_export`.* TO 'gleichklang'@'localhost';

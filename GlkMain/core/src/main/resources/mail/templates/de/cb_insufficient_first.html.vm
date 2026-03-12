@@ -1,0 +1,11 @@
+Rückbuchung Ihrer Teilnahmegebühr wegen mangelnder Kontendeckung
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+bei Durchsicht der Bezahltransaktionen haben wir festgestellt, dass für die von Ihnen entrichtete Teilnahmegebühr von ${amount}, die am ${beginDate} eingezogen wurde, am ${now} eine Rückbuchung wegen mangelnder Kontendeckung veranlasst wurde.
+
+Damit Sie dennoch an der Teilnahmevermittlung bei Gleichklang teilnehmen können, bieten wir Ihnen an, den zurückgebuchten Betrag per Vorabüberweisung zu begleichen.
+
+${paymentInfo}
+
+#include("include_footer.html.vm")

@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('relationship', 'footprint_notified', 'BIT(1) DEFAULT true');

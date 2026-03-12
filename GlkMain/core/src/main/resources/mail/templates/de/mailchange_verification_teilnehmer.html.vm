@@ -1,0 +1,9 @@
+Bestätigung der E-Mail-Änderung
+#include("include_header.html.vm")
+Hallo $!{user.firstName} $!{user.lastName},
+
+bitte bestätigen Sie Ihre Emailadresse <b>${user.newEmail}</b> durch Klicken des folgenden Link:
+
+<b><a href="${confirmation_url}">${confirmation_url}</a></b>
+
+#include("include_footer.html.vm")

@@ -1,0 +1,12 @@
+Unbekannte Bezahlung
+#include("include_header.html.vm")
+Sehr geehrter Admin,
+
+der Nutzer/die Nutzerin ${user.alias} (${user.email}) hat am ${beginDate} eine externe Bezahlung durchgeführt, die nicht zugeordnet werden kann.
+
+${paymentInfo}
+
+Bitte überprüfen Sie diese und tragen Sie die Bezahlung gegebenenfalls in das System manuell ein.
+Wenden Sie sich bei Rückfragen dazu auch an das Entwicklerteam: team-gk@binaere-bauten.de
+
+#include("include_footer.html.vm")

@@ -1,0 +1,1 @@
+# call CREATE_UNIQUE_INDEX('answer_question_user_idx', 'answer', 'question_id, user_id');

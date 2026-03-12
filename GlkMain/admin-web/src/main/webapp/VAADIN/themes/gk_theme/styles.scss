@@ -1,0 +1,143 @@
+@import "gk_theme.scss";
+@import "addons.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in gk_theme.scss
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/RobotoCondensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/RobotoCondensed-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: normal;
+  src: url('fonts/RobotoCondensed-Italic.ttf');
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: bold;
+  src: url('fonts/RobotoCondensed-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  src: url('fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url('fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: normal;
+  src: url('fonts/Roboto-Italic.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: bold;
+  src: url('fonts/Roboto-BlackItalic.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 900;
+  src: url('fonts/Roboto-BlackItalic.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  src: url('fonts/Roboto-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: url('fonts/Roboto-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: "Damion";
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Damion-Regular.ttf');
+}
+
+.gk_theme {
+  @include addons;
+  @include gk_theme;
+}
+
+.v-button.v-widget.postfix-button.v-button-postfix-button {
+   margin-top: 25px;
+}
+
+.auto_renewal_button{
+     border-radius: 40px;
+     background-color: #608033;
+     margin-right: 0px;
+     margin-left: 25px;
+     max-height: -1vh;
+     height: 49px;
+     padding-top: 11px;
+     margin-top: 2px;
+
+}
+
+.auto_renewal_text_field{
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+.v-label.v-widget.v-label-undef-w.label_style.v-label-label_style {
+    margin-top: 92px;
+    margin-left: -330px;
+}
+
+

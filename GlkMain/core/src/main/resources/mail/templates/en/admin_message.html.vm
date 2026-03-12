@@ -1,0 +1,11 @@
+Re:${subject}
+#include("include_header.html.vm")
+You have written to the support team of Gleichklang. We would like to send you the following answer
+<b>our answer:</b>
+${messagetext} <b>Your original message was as follows:</b>
+${oldMessage}
+
+Login here in your personal Gleichklang Account:
+<a href="https://gleichklang.de/teilnehmer/?login">https://gleichklang.de/teilnehmer/?login</a>
+${signature}
+

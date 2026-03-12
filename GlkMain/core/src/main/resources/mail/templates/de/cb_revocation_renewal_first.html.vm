@@ -1,0 +1,12 @@
+Rückbuchung Ihrer Teilnahmegebühr für automatische Verlängerung
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+am ${beginDate} ist die automatische Verlängerung für Sie in Kraft getreten. Leider haben Sie am ${now} eine Rückbuchung der Teilnahmegebühr veranlasst. Dadurch sind bei uns leider Kosten in Höhe von ${amount} entstanden und wir möchten Sie bitten, diese an die untenstehende Kontoverbindung zu überweisen.
+
+${paymentInfo}
+
+Hinweis zur Rückbuchung:
+Bitte bedenken Sie, dass Rückbuchungen nur dann legitim sind, wenn ein Unternehmen bei Ihnen unberechtigt abgebucht hat. In diesem Fall können Sie eine Rückbuchung veranlassen und dem Unternehmen, welches illegitim abbuchte, werden die entstandenen Kosten in Rechnung gestellt. Wir hatten aber Ihre Erlaubnis zur Abbuchung, so dass Sie den Betrag nicht rückbuchen durften. Natürlich werden von uns berechtigte Ansprüche immer erstattet, wobei wir sowieso grundsätzlich kulant sind. Sie waren aber an uns nicht herangetreten, sondern hatten einfach eine Rückbuchung veranlasst. Dadurch sind uns nun die oben genannten Kosten enstanden um deren baldige Überweisung wir bitten.
+
+#include("include_footer.html.vm")

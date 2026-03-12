@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://heidelpay.de/query"
+            elementFormDefault="unqualified"
+            xmlns="http://heidelpay.de/query">
+
+
+    <xsd:element name="Request" type="RequestType"/>
+
+    <xsd:complexType name="RequestType">
+        <xsd:sequence>
+            <xsd:element name="Header" type="HeaderType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Transaction" type="TransactionRequestType"
+                         minOccurs="0" maxOccurs="1"></xsd:element>
+            <xsd:element name="Query" type="QueryType"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="version" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="HeaderType">
+        <xsd:sequence>
+            <xsd:element name="Security" type="SecurityType"
+                         minOccurs="1" maxOccurs="1">
+            </xsd:element>
+        </xsd:sequence>
+
+    </xsd:complexType>
+
+    <xsd:complexType name="TransactionRequestType">
+        <xsd:sequence>
+            <xsd:element name="User" type="UserType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Identification"
+                         type="IdentificationRequestType" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Payment" type="PaymentRequestType"
+                         minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Account" type="AccountRequestType"
+                         minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Customer" type="CustomerType"
+                         minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Frontend" type="FrontendType"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Authentication" type="AuthenticationType"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Analysis" type="AnalysisType" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Job" type="JobType" minOccurs="0"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="mode" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="response" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="channel" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="source" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="ResponseType">
+        <xsd:sequence>
+            <xsd:element name="Transaction"
+                         type="TransactionResponseType" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Result" type="ResultType"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Error" type="ErrorType"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Header" type="HeaderType" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="version" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="IdentificationRequestType">
+        <xsd:sequence>
+            <xsd:element name="TransactionID" type="xsd:string"
+                         minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="ReferenceID" type="xsd:string"
+                         minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="InvoiceID" type="xsd:string"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="ShopperID" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="PresentationType">
+        <xsd:sequence>
+            <xsd:element name="Amount" type="xsd:string"></xsd:element>
+            <xsd:element name="Currency" type="xsd:string"></xsd:element>
+            <xsd:element name="Usage" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="PaymentRequestType">
+        <xsd:sequence>
+            <xsd:element name="Presentation" type="PresentationType"
+                         minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Memo" type="xsd:string" maxOccurs="1"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Recurrence" type="RecurrenceType" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="code" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="AccountRequestType">
+        <xsd:sequence>
+            <xsd:element name="Holder" type="xsd:string" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Number" type="xsd:string" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Bank" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Country" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="BankName" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="IBan" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="BIC" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Limit" type="xsd:int"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Identification" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Brand" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Expiry" type="ExpiryType"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Start" type="StartType"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Verification" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="CardIssueNumber" type="xsd:int"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="ID" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Password" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+        </xsd:sequence>
+
+        <xsd:attribute name="registration" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="CustomerType">
+        <xsd:sequence>
+            <xsd:element name="Name" type="NameType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Address" type="AddressType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Contact" type="ContactType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Details" type="DetailsType" maxOccurs="1"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Identity" type="IdentityType"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="NameType">
+        <xsd:sequence>
+            <xsd:element name="Given" type="xsd:string" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Family" type="xsd:string" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Title" type="xsd:string" maxOccurs="1"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Company" type="xsd:string" maxOccurs="1"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Salutation" type="xsd:string"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Gender" type="xsd:string" maxOccurs="1"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Sex" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Birthdate" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="AddressType">
+        <xsd:sequence>
+            <xsd:element name="Street" type="xsd:string" minOccurs="1"
+                         maxOccurs="1"></xsd:element>
+            <xsd:element name="Zip" type="xsd:string" minOccurs="1"
+                         maxOccurs="1"></xsd:element>
+            <xsd:element name="City" type="xsd:string"
+                         minOccurs="1"></xsd:element>
+            <xsd:element name="State" type="xsd:string" minOccurs="0"
+                         maxOccurs="1"></xsd:element>
+            <xsd:element name="Country" type="xsd:string"
+                         minOccurs="1"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ContactType">
+        <xsd:sequence>
+            <xsd:element name="Email" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Ip" type="xsd:string"
+                         minOccurs="1"></xsd:element>
+            <xsd:element name="Mobile" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Phone" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="TransactionResponseType">
+        <xsd:sequence>
+            <xsd:element name="Identification"
+                         type="IdentificationResponseType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Processing" type="ProcessingType"
+                         minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Payment" type="PaymentResponseType"
+                         minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Account" type="AccountResponseType"
+                         minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Connector" type="ConnectorType"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Customer" type="CustomerType"
+                         minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Frontend" type="FrontendType"
+                         minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Analysis" type="AnalysisType"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Authentication" type="AuthenticationType"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="User" type="UserType" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="RequestTimestamp" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="mode" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="response" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="channel" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="source" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="PaymentResponseType">
+        <xsd:sequence>
+            <xsd:element name="Clearing" type="ClearingType"
+                         minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Presentation" type="PresentationType"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="code" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="ClearingType">
+        <xsd:sequence>
+            <xsd:element name="Amount" type="xsd:string"
+                         minOccurs="1">
+            </xsd:element>
+            <xsd:element name="Currency" type="xsd:string"
+                         minOccurs="1">
+            </xsd:element>
+            <xsd:element name="Descriptor" type="xsd:string"
+                         minOccurs="1">
+            </xsd:element>
+            <xsd:element name="Date" type="xsd:string"
+                         minOccurs="1"></xsd:element>
+            <xsd:element name="Support" type="xsd:string" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Account" type="ConnectorAccountType"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="FxRate" type="xsd:string" maxOccurs="1"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="FxSource" type="xsd:string" maxOccurs="1"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="FxDate" type="xsd:string" maxOccurs="1"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="BankName" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="IdentificationResponseType">
+        <xsd:sequence>
+            <xsd:element name="TransactionID" type="xsd:string"
+                         minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="UniqueID" type="xsd:string"
+                         minOccurs="1">
+            </xsd:element>
+            <xsd:element name="ShortID" type="xsd:string"
+                         minOccurs="1">
+            </xsd:element>
+            <xsd:element name="ShopperID" type="xsd:string"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="InvoiceId" type="xsd:string"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="BulkID" type="xsd:string" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Source" type="xsd:string" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="SourceLongId" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="SourceShortId" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="ReferenceID" type="xsd:string" minOccurs="0"
+                         maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ProcessingType">
+        <xsd:sequence>
+            <xsd:element name="Timestamp" type="xsd:string"
+                         minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Result" type="xsd:string" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Status" type="StatusType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Reason" type="ReasonType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Return" type="ReturnType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="ConfirmationStatus" type="xsd:string"
+                         minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="InfoMessage" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Redirect" type="RedirectType"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Risk" type="RiskType" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="code" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="StatusType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="code" type="xsd:string"></xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="ReturnType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="code" type="xsd:string"></xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="ReasonType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="code" type="xsd:string"></xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="SecurityType">
+        <xsd:attribute name="sender" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="UserType">
+        <xsd:attribute name="login" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="pwd" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:element name="Response" type="ResponseType"></xsd:element>
+
+
+    <xsd:complexType name="ExpiryType">
+        <xsd:attribute name="month" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="year" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="StartType">
+        <xsd:attribute name="Month" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="Year" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="IdentityType">
+        <xsd:attribute name="paper" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="AccountResponseType">
+        <xsd:sequence>
+            <xsd:element name="Balance" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="RegistrationUrl" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Number" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Holder" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Bank" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Country" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Expiry" type="ExpiryType"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Month" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Year" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Brand" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="CardIssueNumber" type="xsd:string"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Bic" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Iban" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="BankName" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="registration" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="FrontendType">
+        <xsd:sequence>
+            <xsd:element name="ResponseUrl" type="xsd:string" maxOccurs="1"
+                         minOccurs="1"></xsd:element>
+            <xsd:element name="SessionID" type="xsd:string" maxOccurs="1"
+                         minOccurs="1"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="RedirectType">
+        <xsd:sequence>
+            <xsd:element name="Parameter" type="ParameterType"
+                         maxOccurs="unbounded" minOccurs="1"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="url" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="ParameterType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="ConnectorType">
+        <xsd:sequence>
+            <xsd:element name="Account" type="ConnectorAccountType"
+                         maxOccurs="1" minOccurs="0"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="RiskType">
+        <xsd:attribute name="score" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="AuthenticationType">
+        <xsd:sequence>
+            <xsd:element name="ResultIndicator" type="xsd:string"
+                         maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Parameter" type="ParameterType"
+                         maxOccurs="unbounded" minOccurs="0"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="ConnectorAccountType">
+        <xsd:sequence>
+            <xsd:element name="Country" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="GatewayAddress" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Bic" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Bank" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Number" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="RandomSettlementMaximum"
+                         type="xsd:string" maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="RandomSettlementMinimum"
+                         type="xsd:string" maxOccurs="1" minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Supports3DSecure" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Holder" type="xsd:string" maxOccurs="1"
+                         minOccurs="1"></xsd:element>
+            <xsd:element name="Iban" type="xsd:string" maxOccurs="1"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="AnalysisType">
+        <xsd:sequence>
+            <xsd:element name="Criterion" type="CriterionType"
+                         maxOccurs="unbounded" minOccurs="0"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="CriterionType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="DetailsType">
+        <xsd:sequence>
+            <xsd:element name="Identity" type="IdentityType"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="RecurrenceType">
+        <xsd:attribute name="mode" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="JobType">
+        <xsd:sequence>
+            <xsd:element name="Execution" type="ExecutionType"
+                         minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Notice" type="NoticeType" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Duration" type="DurationType"
+                         minOccurs="1" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Action" type="ActionType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="start" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="end" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="ExecutionType">
+        <xsd:sequence>
+            <xsd:element name="Second" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Minute" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Hour" type="xsd:string" minOccurs="0"
+                         maxOccurs="1"></xsd:element>
+            <xsd:element name="DayOfMonth" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Month" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="DayOfWeek" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Year" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Expression" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="NoticeType">
+        <xsd:sequence>
+            <xsd:element name="Callable" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Number" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Unit" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="DurationType">
+        <xsd:sequence>
+            <xsd:element name="Number" type="xsd:int"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="Unit" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="ActionType">
+        <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="ResultType">
+        <xsd:sequence>
+            <xsd:element name="Transaction"
+                         type="TransactionResponseType" minOccurs="0"
+                         maxOccurs="unbounded">
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="response" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="count" type="xsd:int"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="QueryType">
+        <xsd:sequence>
+            <xsd:element name="User" type="UserType" minOccurs="1"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Period" type="PeriodType"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Types" type="TransactionTypesType"
+                         minOccurs="0">
+            </xsd:element>
+            <xsd:element name="Identification"
+                         type="IdentificationRequestQueryType" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="TransactionType" type="xsd:string"
+                         minOccurs="0" maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="Methods"
+                         type="MethodsType" minOccurs="0"
+                         maxOccurs="1">
+            </xsd:element>
+            <xsd:element name="ProcessingResult" type="xsd:string" minOccurs="0"
+                         maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="entity" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="level" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="mode" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="type" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="maxCount" type="xsd:int"></xsd:attribute>
+        <xsd:attribute name="source" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="PeriodType">
+        <xsd:attribute name="from" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="to" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="TransactionTypesType">
+        <xsd:sequence>
+            <xsd:element name="Type" type="TransactionTypeType" minOccurs="0"
+                         maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="TransactionTypeType">
+        <xsd:attribute name="code" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+    <xsd:complexType name="TransactionQueryResponseType"></xsd:complexType>
+
+    <xsd:complexType name="ErrorType">
+        <xsd:sequence>
+            <xsd:element name="Timestamp" type="xsd:string"></xsd:element>
+            <xsd:element name="Return" type="ReturnType"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="IdentificationRequestQueryType">
+        <xsd:sequence>
+            <xsd:element name="UniqueID" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="ShortID" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="TransactionID" type="xsd:string"
+                         minOccurs="0"></xsd:element>
+            <xsd:element name="UniqueIDs" type="UniqueIDsType" minOccurs="0"
+                         maxOccurs="1"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="UniqueIDsType">
+        <xsd:sequence>
+            <xsd:element name="ID" type="xsd:string" minOccurs="1"
+                         maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="MethodsType">
+        <xsd:sequence>
+            <xsd:element name="Method" type="MethodType" minOccurs="0"
+                         maxOccurs="unbounded"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="MethodType">
+        <xsd:attribute name="code" type="xsd:string"></xsd:attribute>
+    </xsd:complexType>
+
+</xsd:schema>
+

@@ -1,0 +1,9 @@
+<p><b>Tradition:</b> Personen mit hohen Werten legen Wert auf Traditionen, Autoritäten und das Wissen der Vorväter. Sie plädieren dafür, sich an Traditionen verstärkt zu orientieren. Personen mit niedrigen Werten betonen die Auflösbarkeit von Traditionen. Sie orientieren sich weniger an Überliefertem, sondern halten es verstärkt für erforderlich, neue Ansätze zu entwickeln. <b>Ihre Ausprägung in Tradition ist <i>${traditio}</i>.</b></p>
+~~~
+<p><b>Gesellschaftliches Interesse:</b> Personen mit hohen Werten interessieren sich für Politik und gesellschaftliche Themen, sehen es als erforderlich an, sich politisch zu engagieren. Personen mit niedrigen Werten halten sich aus politischen Diskussionen lieber raus und plädieren für die Konzentration auf das Privatleben. <b>Ihre Ausprägung in Gesellschaftliches Interesse ist <i>${desint}</i>.</b></p>
+~~~
+<p><b>Umwelt:</b> Personen mit hohen Werten betonen die Bedeutsamkeit von umweltbezogenen Themen, denen sie eine hohe Priorität zuweisen. Personen mit geringen Werten sehen keine hohe Bedeutsamkeit umweltbezogener Fragestellungen. <b>Ihre Ausprägung in Umwelt ist <i>${umwelt}</i>.</b></p>
+~~~
+<p><b>Fürsorge:</b> Personen mit hohen Werten betonen die Notwendigkeit zur sozialen Fürsorglichkeit. Personen mit niedrigen Werten weisen in ihren Einstellungen der sozialen Fürsorglichkeit keine Priorität zu. <b>Ihre Ausprägung in Fürsorge ist <i>${fuersor}</i>.</b></p>
+~~~
+<p><b>Milde:</b> Personen mit hohen Werten plädieren für Milde und Verständnis für Menschen, die sozial abweichendes und normverletzendes Verhalten zeigen. Personen mit niedrigen Werten plädieren eher für Härte. <b>Ihre Ausprägung in Milde ist <i>${milde}</i>.</b></p>

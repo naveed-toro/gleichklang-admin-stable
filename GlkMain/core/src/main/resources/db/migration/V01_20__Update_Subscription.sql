@@ -1,0 +1,5 @@
+ALTER TABLE subscription
+MODIFY COLUMN `begin` DATETIME NULL;
+
+ALTER TABLE subscription
+MODIFY COLUMN `end` DATETIME NULL;

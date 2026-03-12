@@ -1,0 +1,10 @@
+Bestätigung der Buchung für die Gleichklang-Optimierung
+#include("include_header.html.vm")
+Hallo $!{user.firstName} $!{user.lastName},
+
+wir bedanken uns herzlich für Ihre Buchung der Optimierung Ihrer Gleichklang Teilnahme.
+Bitte überweisen Sie den Betrag von ${amount} auf das folgende Konto:
+
+${paymentInfo}
+
+#include("include_footer.html.vm")

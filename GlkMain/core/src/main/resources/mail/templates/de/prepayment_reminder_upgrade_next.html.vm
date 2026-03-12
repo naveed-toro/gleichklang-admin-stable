@@ -1,0 +1,13 @@
+Erneute Zahlungserinnerung für die lebenslange Teilnahmeoption bei Gleichklang
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+wir hatten Sie bereits angeschrieben und Sie darauf hingewiesen, dass die Gebühren für die von Ihnen gebuchte lebenslange Option bisher nicht beglichen sind. Bitte seien Sie so freundlich und überweisen Sie die Gebühren nunmehr rasch, damit die Option gültig wird.
+
+Hier sind zur Erinnerung noch einmal die notwendigen Daten für die Überweisung:
+
+${paymentInfo}
+
+Falls Sie sicher sind, dass Sie den Betrag bereits überwiesen haben, dann wenden Sie sich bitte in einer kurzen Mail an uns, in der Sie uns das genaue Datum Ihrer Zahlung mitteilen. Wir kümmern uns dann um den Verbleib der Zahlung.
+
+#include("include_footer.html.vm")

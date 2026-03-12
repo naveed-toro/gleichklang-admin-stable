@@ -1,0 +1,1 @@
+-- Deleted (see migration V03_85_Migrate_Payments)

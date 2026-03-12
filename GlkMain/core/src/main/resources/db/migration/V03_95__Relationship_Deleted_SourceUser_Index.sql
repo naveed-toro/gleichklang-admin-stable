@@ -1,0 +1,1 @@
+CALL CREATE_INDEX('relationship_deleted_source_user_id', 'relationship', 'deleted, source_user_id');

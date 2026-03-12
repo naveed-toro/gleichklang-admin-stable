@@ -1,0 +1,9 @@
+Ihr Profil wurde als interessant eingestuft
+#include("include_header.html.vm")
+Hallo,
+
+soeben wurden Sie durch das Mitglied <b>${sender.alias}</b> in der Rubrik ${recommendation_category} als interessant eingestuft. Dies bedeutet, dass das Mitglied Sie gerne kennen lernen möchte. Schreiben Sie doch am besten eine kurze Nachricht an das Mitglied im Teilnahmebereich. Denn unsere Auswertungen zeigen, dass diejenigen die allerbesten Erfolgschancen haben, die aktiv von sich aus den Kontakt aufnehmen.
+
+Wenn Sie keine Benachrichtigungen über positive Einstufungen haben wollen, tragen Sie das bitte in Ihrem Teilnahmebereich unter Meine Teilnahme/Persönliche Daten/Nachrichten.
+
+#include("include_footer.html.vm")

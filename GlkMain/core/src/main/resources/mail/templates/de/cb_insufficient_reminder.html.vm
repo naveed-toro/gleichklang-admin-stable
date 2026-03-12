@@ -1,0 +1,12 @@
+Zahlungserinnerung Rückbuchung Ihrer Teilnahmegebühr
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+Ihr Teilnahmebetrag von ${amount} wurde am ${now} wegen mangelnder Kontendeckung zurück gebucht und wir hatten Sie bereits darüber informiert, dass wir deswegen die Möglichkeit geschaffen haben, die Zahlung per Vorabüberweisung zu leisten.
+Hier noch einmal zur Erinnerung die erforderlichen Daten:
+
+${paymentInfo}
+
+Falls Sie die Zahlung doch schon geleistet haben, dann kann es sein, dass Sie nur nicht erkannt wurde. In diesem Fall bitten wir um eine kurze Rückmeldung, an welchem Tag Sie die Zahlung geleistet haben, damit wir dem nachgehen können.
+
+#include("include_footer.html.vm")

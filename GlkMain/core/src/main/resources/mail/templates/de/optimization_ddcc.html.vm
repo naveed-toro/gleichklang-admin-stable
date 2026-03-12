@@ -1,0 +1,8 @@
+Bestätigung der Buchung für die Gleichklang-Optimierung
+#include("include_header.html.vm")
+Hallo $!{user.firstName} $!{user.lastName},
+
+wir bedanken uns herzlich für Ihre Buchung der Optimierung Ihrer Gleichklang Teilnahme.
+Der Betrag von ${amount} ist bereits eingezogen worden. Die Optimierung wird innerhalb von einer Woche erfolgen.
+
+#include("include_footer.html.vm")

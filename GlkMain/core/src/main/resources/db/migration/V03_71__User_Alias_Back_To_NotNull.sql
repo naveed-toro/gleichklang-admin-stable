@@ -1,0 +1,1 @@
+CALL CHANGE_COLUMN('user_', 'alias', 'alias', 'VARCHAR(255) NOT NULL');

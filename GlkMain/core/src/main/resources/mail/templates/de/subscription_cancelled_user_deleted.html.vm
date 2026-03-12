@@ -1,0 +1,9 @@
+Bestätigung der Kündigung und Löschung Ihrer Daten
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+wir haben Ihre Teilnahme beendet und Ihre bei uns gespeicherten persönlichen Daten unwiderruflich gelöscht. Sollten Sie erneut teilnehmen wollen, müssen Sie sich daher komplett neu anmelden.
+
+Selbstverständlich würden wir uns freuen, Sie in Zukunft erneut bei Gleichklang begrüßen zu können. In jedem Fall wünschen wir Ihnen viel Glück für Ihren weiteren Lebensweg.
+
+#include("include_footer.html.vm")

@@ -1,0 +1,15 @@
+Ihre Anfrage wegen des Sozialtarifs
+#include("include_header.html.vm")
+Hallo,
+
+wir freuen uns über Ihr Interesse an Gleichklang und hoffen, Sie bald bei uns als Mitglied begrüßen zu können.
+
+Bei Gleichklang bieten wir einen für uns nicht kostendeckenden Sozialtarif, damit bei niemanden eine Mitgliedschaft am Geldbeutel scheitert. Denn dies würde dem sozial-alternativem Charakter unserer Kennenlern-Plattform widersprechen. Diese Tarif beginnt ab 6 € im Jahr, wobei aber auch höhere Zahlungen ausgewählt werden k�nnen.
+
+Um den Sozialtarif nutzen zu können, geben Sie bitte bei der Anmeldung im Feld AKTIONSNUMMER folgendes ein:
+
+${social_action_code}
+
+Wir bedanken uns für Ihr Interesse bei Gleichklang und wünschen Ihnen viel Erfolg und Glück bei uns!
+
+#include("include_footer.html.vm")

@@ -1,0 +1,109 @@
+<style>
+	/* Hier werden alles Style-Informationen hinterlegt. */
+
+    .static-container-content .community {
+        font: 400 16px/1.6 "Roboto", normal;
+        background: #fff;
+        border-top:5px solid #de5b6d;
+        margin-top:294px;
+        padding-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    .static-container-content .community:before {
+        content: url("VAADIN/static-images/community.png");
+        display:block;
+        margin-top:-294px;
+    }
+
+    .static-container-content .community h1 {
+        font-size: x-large;
+        font-weight: 400;
+        color: #239daa;
+        padding-left: 20px;
+        margin-bottom:0;
+    }
+
+    .static-container-content .community p {
+        padding:10px;
+        margin:0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #6b6b6b;
+    }
+
+    .static-container-content .community p img {
+        float:left;
+        margin:0 10px;
+    }
+    .static-container-content .community p a {
+        font-size: 18px;
+        font-weight: 400;
+        display: block;
+        text-decoration: none;
+        padding-top: 3px;
+    }
+    .static-container-content .community p a small {
+        font-size: 18px;
+        font-weight: 400;
+        color: #6b6b6b;
+        padding-left: 17px;
+    }
+    .static-container-content .community p a:hover {
+        text-decoration: underline;
+    }
+    .static-container-content .community .aGreen {
+        color: #79983e;
+    }
+    .static-container-content .community .aBlue {
+        color: #368fc9;
+    }
+    .static-container-content .community .aPink {
+        color: #cf37a7;
+    }
+    .static-container-content .community .aCyan {
+        color: #239daa;
+    }
+    .static-container-content .community hr {
+        margin: 20px;
+        border: 0;
+        background: #eee;
+        height: 1px;
+    }
+    .static-container-content .community .margin-box {
+        margin: 0 10px 5px 10px;
+    }
+
+</style>
+<div class="static-container-content">
+	<div class="community">
+	<!-- Innerhalb dieses Containers kann der Inhalt frei gestaltet werden. -->
+	
+	<h1>Community-Aktionen</h1>
+  
+  <div class="margin-box">
+  <p>
+  Helfen Sie uns, Gleichklang bekannter zu machen und laden Sie Freunde ein, bei uns teilzunehmen. Je mehr Mitglieder die Community hat, desto gr&ouml;&szlig;er sind die Chancen f&uuml;r jedes einzelne Mitglied, einen passenden Partner zu finden.
+  </p>
+  </div>
+  <div class="margin-box">
+	<p><img src="../../../static-images/flyer.png"><a class="aCyan" href="https://www.gleichklang.de/flyer-bestellen/" target="_blank"><span class="aCyan" style="font-family: FontAwesome;">&#xf054;</span> Flyer bestellen<br><small>& auslegen</small></a>
+  </p>
+  </div> 
+  <hr> 
+  <div class="margin-box">
+	<p><img src="../../../static-images/mail.png"><a class="aBlue" href="https://www.gleichklang.de/freunde-zu-gleichklang-einladen/" target="_blank"><span class="aBlue" style="font-family: FontAwesome;">&#xf054;</span> Freunde per E-Mail<br><small>zu Gleichklang einladen</small></a>
+  </p>
+  </div> 
+  <hr> 
+  <div class="margin-box">
+	<p><img src="../../../static-images/post.png"><a class="aGreen" href="https://www.gleichklang.de/freunde-zu-gleichklang-einladen/#perpost" target="_blank"><span class="aGreen" style="font-family: FontAwesome;">&#xf054;</span> Freunde per Post<br><small>zu Gleichklang einladen</small></a>
+  </p>
+  </div> 
+  <hr> 
+  <div class="margin-box">
+	<p><img src="../../../static-images/werbung.png"><a class="aPink" href="https://www.gleichklang.de/werbemoeglichkeit-empfehlen/" target="_blank"><span class="aPink" style="font-family: FontAwesome;">&#xf054;</span> Werbem&ouml;glichkeit<br><small>empfehlen</small></a>
+  </p>
+  </div> 
+	</div>
+</div>

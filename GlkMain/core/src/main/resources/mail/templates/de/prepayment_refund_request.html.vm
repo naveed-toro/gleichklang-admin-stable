@@ -1,0 +1,7 @@
+Bankverbindung für die Rückerstattung
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+bitte teilen Sie uns Ihre Bankverbindung für die Rückerstattung mit.
+
+#include("include_footer.html.vm")

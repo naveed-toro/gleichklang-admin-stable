@@ -1,0 +1,11 @@
+Ihre Anfrage wegen des Sozialtarifs
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+wir freuen uns über Ihr Interesse an Gleichklang.
+
+Da Sie sich bereits angemeldet haben, haben wir in Ihren bestehenden Account die Aktionsnummer für den Sozialtarif eingetragen. Wenn Sie jetzt die Bezahlung wählen, dann wird Ihnen der Sozialtarif zur Auswahl angeboten.
+
+Wir bedanken uns für Ihr Interesse bei Gleichklang und wünschen Ihnen viel Erfolg und Glück bei uns!
+
+#include("include_footer.html.vm")

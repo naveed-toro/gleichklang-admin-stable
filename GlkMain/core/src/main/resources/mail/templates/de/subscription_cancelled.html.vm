@@ -1,0 +1,13 @@
+Bestätigung Ihrer Kündigung
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+wir haben Ihre Teilnahme beendet. Sollten Sie erneut teilnehmen wollen, können Sie sich mit Ihren Login-Daten einloggen und dann entscheiden, ob Sie Ihr Profil reaktivieren oder alles noch einmal ganz neu beginnen wollen.
+
+Bitte bedenken Sie, dass Partnersuche und Freundschaftssuche oft länger dauern und mehrere Anläufe notwendig sein können. Wir kennen viele glückliche Gleichklang-Paare, bei denen zunächst eine Abmeldung erfolgte und dann nach erneuter Anmeldung das Lebensglück gefunden wurde.
+
+Gleichklang hält die Gebühren auch deshalb so gering, damit es sich alle Mitglieder leisten können, bis zum Erfolg bei uns zu bleiben.
+
+Wir würden uns in diesem Sinne freuen, Sie später erneut bei Gleichklang begrüßen zu können. In jedem Fall wünschen wir Ihnen viel Glück für Ihren weiteren Lebensweg.
+
+#include("include_footer.html.vm")

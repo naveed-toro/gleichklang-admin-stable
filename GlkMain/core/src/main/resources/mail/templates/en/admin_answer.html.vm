@@ -1,0 +1,2 @@
+<p> Hello ${firstname} ${lastname},</p>
+#parse("include_footer.html.vm")

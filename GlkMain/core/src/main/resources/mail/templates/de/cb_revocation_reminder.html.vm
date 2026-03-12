@@ -1,0 +1,14 @@
+Zahlungserinnerung wegen Rückbuchung Ihrer Teilnahmegebühr für automatische Verlängerung
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+da Sie eine Rückbuchung der Teilnahmegebühr veranlasst haben, haben wir Sie gebeten, die anfallenden Kosten zu erstatten. Leider ist bisher noch kein Zahlungseingang zu verzeichnen. Wir schicken Ihnen deshalb LETZTMALIG noch einmal die Zahlungsdaten.
+
+${paymentInfo}
+
+Falls Sie die Zahlung doch schon geleistet haben, dann kann es sein, dass Sie nur nicht erkannt wurde. In diesem Fall bitten wir um eine kurze Rückmeldung, an welchem Tag Sie die Zahlung geleistet haben, damit wir dem nachgehen können.
+
+Hinweis zur Rückbuchung:
+Bitte bedenken Sie, dass Rückbuchungen nur dann legitim sind, wenn ein Unternehmen bei Ihnen unberechtigt abgebucht hat. In diesem Fall können Sie eine Rückbuchung veranlassen und dem Unternehmen, welches illegitim abbuchte, werden die entstandenen Kosten in Rechnung gestellt. Wir hatten aber Ihre Erlaubnis zur Abbuchung, so dass Sie den Betrag nicht rückbuchen durften. Natürlich werden von uns berechtigte Ansprüche immer erstattet, wobei wir sowieso grundsätzlich kulant sind. Sie waren aber an uns nicht herangetreten, sondern hatten einfach eine Rückbuchung veranlasst. Dadurch sind uns nun die oben genannten Kosten enstanden um deren baldige Überweisung wir bitten.
+
+#include("include_footer.html.vm")

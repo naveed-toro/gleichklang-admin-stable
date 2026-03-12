@@ -1,0 +1,9 @@
+${subject}
+#include("include_header.html.vm")
+Sie haben sich an den Gleichklang-Support mit einer Anfrage gewandt, die wir folgendermaßen beantworten
+
+Unsere Antwort:
+${messagetext}
+#if(${oldMessage}) Ihre ursprüngliche Anfrage lautete:
+${oldMessage}
+#end${signature}

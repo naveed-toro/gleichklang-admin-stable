@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- jaxb binding file for persistence_components.xsd -->
+<jaxb:bindings
+        version="2.1"
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <jaxb:bindings schemaLocation="persistence_components.xsd"
+                   node="/xs:schema">
+        <jaxb:schemaBindings>
+            <jaxb:package
+                    name="de.binaerebauten.gleichklang.core.model.legacy.persistence"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+
+    <jaxb:bindings schemaLocation="heidelpay.xsd" node="/xs:schema">
+        <jaxb:schemaBindings>
+            <jaxb:package
+                    name="de.binaerebauten.gleichklang.core.model.heidelpay.query"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+</jaxb:bindings>

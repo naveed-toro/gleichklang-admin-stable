@@ -1,0 +1,12 @@
+Nachricht von Gleichklang
+<body>
+<div style="font-family:Tahoma,Verdana,Geneva,Lucida,Helvetica,Arial,sans-serif;font-size:16px;border:solid 1px #520010;padding:20px;line-height:140%">
+Guten Tag ${senderName},
+
+der Gleichklang-Support hat Ihnen eine wichtige Nachricht geschrieben zu Ihrem Account bei Gleichklang.
+
+Die Nachricht finden Sie in Ihrem internen Gleichklang-Bereich.
+
+Bitte loggen Sie sich bei Gleichklang ein, um die Nachricht zu lesen:
+<a href="https://gleichklang.de/teilnehmer/?login">https://gleichklang.de/teilnehmer/?login</a>
+${signature}

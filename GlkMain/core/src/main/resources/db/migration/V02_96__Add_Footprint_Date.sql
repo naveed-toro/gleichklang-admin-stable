@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('relationship', 'footprint_date', 'DATETIME');

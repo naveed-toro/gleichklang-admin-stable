@@ -1,0 +1,1 @@
+59 23 * * * /restartTomcat.sh

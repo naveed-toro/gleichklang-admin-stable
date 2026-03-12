@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('user_', 'reset_password', 'BIT(1) DEFAULT FALSE');

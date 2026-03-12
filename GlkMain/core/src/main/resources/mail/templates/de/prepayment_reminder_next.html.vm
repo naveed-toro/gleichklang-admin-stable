@@ -1,0 +1,15 @@
+Erneute Zahlungserinnerung für die Teilnahme bei Gleichklang
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+Wir hatten Sie bereits angeschrieben und Sie darauf hingewiesen, dass die Gebühren für die von Ihnen gebuchte Mitgliedschaft bei Gleichklang bisher nicht beglichen sind. Bitte seien Sie so freundlich und überweisen Sie die Gebühren nunmehr rasch, damit wir die Vermittlung sofort starten können.
+
+Gleichklang ist eine alternative Dating-Agentur, die großen Wert auf Fairness und Sozialverträglichkeit legt. Dies begründet auch die sehr geringen Mitgliedschaftsgebühren, die von uns erhoben werden. Wir werden Sie in keiner Weise auf die von Ihnen erklärte Mitgliedschaft festlegen, würden uns aber sehr freuen, wenn wir Sie mit Eingang der Mitgliedschaftsgebühr bei uns begrüßen könnten. Wir haben keinen Zweifel, dass Sie durch eine Mitgliedschaft bei Gleichklang zum Ziel gelangen werden. Bitte führen Sie hierfür nun die Überweisung der Mitgliedschaftsgebühr aus.
+
+Hier sind zur Erinnerung noch einmal die notwendigen Daten für die Überweisung:
+
+${paymentInfo}
+
+Falls Sie sicher sind, dass Sie den Betrag bereits überwiesen haben, dann wenden Sie sich bitte in einer kurzen Mail an uns, in der Sie uns das genaue Datum Ihrer Zahlung mitteilen. Wir kümmern uns dann um den Verbleib der Zahlung.
+
+#include("include_footer.html.vm")

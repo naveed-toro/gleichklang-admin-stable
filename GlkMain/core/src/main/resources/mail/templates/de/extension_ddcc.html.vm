@@ -1,0 +1,8 @@
+Bestätigung der Erweiterung der Gleichklang Teilnahme
+#include("include_header.html.vm")
+Hallo $!{user.firstName} $!{user.lastName},
+
+wir bedanken uns herzlich für Ihre Buchung der Erweiterung Ihrer Gleichklang Teilnahme.
+Im Fall von Lastschrift und Kreditkarte:  Der Betrag von ${amount} ist bereits eingezogen worden.
+
+#include("include_footer.html.vm")

@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('user_settings', 'enable_marketing_notifications', 'BIT NOT NULL  DEFAULT TRUE AFTER disable_footprint_notifications');

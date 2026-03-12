@@ -1,0 +1,1 @@
+CALL CREATE_INDEX('delivery_status', 'mail_queue_entry', 'delivery_status');

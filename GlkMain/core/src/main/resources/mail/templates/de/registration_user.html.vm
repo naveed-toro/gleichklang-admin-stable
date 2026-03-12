@@ -1,0 +1,15 @@
+Willkommen bei Gleichklang
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+bestätigen Sie jetzt bitte, dass Sie sich unter Angabe dieser Email(${user.email}) bei Gleichklang angemeldet haben.
+
+Klicken Sie hier, um Ihre Mailadresse zu bestätigen:
+
+<a href="${confirmation_url}">${confirmation_url}</a>
+
+Es ist wichtig, dass Sie Ihre Email bestätigen, damit wir auch sicher sein können, dass Sie selbst sich bei uns eingetragen haben und die Adresse gültig ist!
+
+Wir wünschen Ihnen viel Erfolg be Ihrer Partnersuche und Freundschaftssuche.
+
+#include("include_footer.html.vm") 

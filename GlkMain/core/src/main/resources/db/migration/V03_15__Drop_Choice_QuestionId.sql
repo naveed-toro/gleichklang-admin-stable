@@ -1,0 +1,1 @@
+CALL DROP_COLUMN('choice', 'question_id');

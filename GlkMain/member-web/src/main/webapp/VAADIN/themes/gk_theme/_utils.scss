@@ -1,0 +1,5 @@
+@mixin prereg-form-element-shadow($shadow-color) {
+    -webkit-box-shadow: inset 0px 0px 5px 0px $shadow-color !important;
+    -moz-box-shadow: inset 0px 0px 5px 0px $shadow-color !important;
+    box-shadow: inset 0px 0px 5px 0px $shadow-color !important;
+}

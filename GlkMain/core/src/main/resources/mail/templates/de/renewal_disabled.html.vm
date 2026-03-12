@@ -1,0 +1,23 @@
+Ausstellung der Verlängerung
+#include("include_header.html.vm")
+Guten Tag ${user.alias},
+
+Sie haben in Ihrer Mail mitgeteilt, dass Sie bei Gleichklang kündigen wollen. Wir haben daher die Verlängerung Ihrer Teilnahmezeit ausgestellt. Dies bedeutet, dass die Mitgliedschaft nach Ablauf der gebuchten Teilnahmezeit, also zum ${endDate}, automatisch endet.
+
+Wir würden Ihnen raten, Ihre Verlängerung wieder anzustellen. Warum?
+
+1. ) Partnersuche ist oft ein längerer Prozess. Wir haben Mitglieder, die innerhalb von Wochen und Monaten Partnerschaft finden. Anderer brauchen ein, zwei oder auch drei Jahre. Am Ende finden aber fast alle Mitglieder Partnerschaft, die dabei und aktiv bleiben. Es wäre sehr schade, wenn Sie wegen einer auslaufenden Teilnahme Ihr Partnerglück verpassen.
+
+2. ) Außerdem lohnt sich immer auch die zusätzliche Freundschaftssuche. Sie werden im Verlauf fraglos Freunde finden. Auch Freundschaften tragen maßgeblich zum Lebensglück bei und Freundschaftssuche lohnt sich lebenslang.
+
+3. ) Wir haben bei Gleichklang die Gebühren so niedrig gehalten, dass auch eine langfristige Teilnahme möglich und sinnvoll ist. Mit der Verlängerung sichern Sie sich außergewöhnlich günstige Konditionen, die wir Neumitgliedern vermutlich im nächsten Turnus so nicht mehr anbieten können.
+
+Nicht selten vergessen Mitglieder, dass sie die Verlängerung deaktiviert haben und ärgern sich dann selbst, wenn die Teilnahme dann termingerecht beendet wird.
+
+Wir möchten Sie gerne bei Gleichklang behalten und Sie ermutigen, die Verlängerung wieder folgendermaßen zu aktivieren:
+
+Gehen Sie auf "Meine Teilnahme", wählen Sie "Abonnement" und aktivieren Sie das Verlängerungs-Kästchen.
+
+Wir wünschen Ihnen weiterhin viel Erfolg bei Ihrer Partner- und Freundschaftssuche und hoffen, dass Sie bei uns bleiben, auch ggf. für die Freundschaftssuche nach dem Partnerglück!
+
+#include("include_footer.html.vm")

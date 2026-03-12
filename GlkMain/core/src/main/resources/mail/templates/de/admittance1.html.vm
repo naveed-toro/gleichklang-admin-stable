@@ -1,0 +1,11 @@
+Aufnahme in Vermittlungsdatei
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+wir freuen uns, dass Sie sich bei uns angemeldet haben.
+
+${paymentInfo}
+
+Soeben wurde Ihnen eine weitere Nachricht gesandt, unter dem Titel "Tipps & Hinweise für Ihre Teilnahme bei Gleichklang". Bitte lesen Sie diese etwas längere Nachricht unbedingt aufmerksam durch, damit Sie Ihre Teilnahme bei uns für sich und die gesamte Community so effektiv wie möglich gestalten können!
+
+#include("include_footer.html.vm")

@@ -1,0 +1,16 @@
+# Config file for prorox (https://github.com/bripkens/proxrox)
+#
+# This config configures nginx on the local machine to forward incoming https requests
+# to localhost:8080.
+#
+# To start nginx via proxrox use:
+#   sudo proxrox start proxrox.yaml
+#
+# To stop nginx via proxrox use:
+#   sudo proxrox stop proxrox.yaml
+#
+
+port: 443
+tls: true
+proxy: 
+  '/Gleichklang': 'http://localhost:8080/Gleichklang'

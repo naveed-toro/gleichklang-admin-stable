@@ -1,0 +1,1 @@
+-- Deleted (see migration V03_87__Migrate_Subscriptions_From_Scratch) 

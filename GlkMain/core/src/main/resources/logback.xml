@@ -1,0 +1,201 @@
+<configuration debug="true">
+
+    <property resource="build.properties"/>
+
+    <contextName>${app.name}</contextName>
+    <jmxConfigurator/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- this appender logs everything to the console, even performance monitoring -->
+        <encoder>
+            <pattern>%d %-5level [%thread] %logger{10} \(%line\): %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- http://docs.jboss.org/hibernate/orm/4.3/topical/html/logging/Logging.html -->
+    <logger name="org.hibernate.SQL" level="INFO"/>
+
+    <if condition='isDefined("catalina.base")'>
+        <then>
+
+            <appender name="APPLOGFILE"
+                      class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${catalina.base}/logs/${app.name}.log</file>
+
+                <rollingPolicy
+                        class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                    <!-- daily rollover -->
+                    <fileNamePattern>
+                        ${catalina.base}/logs/${app.name}.%d.log.gz
+                    </fileNamePattern>
+
+                    <!-- keep 30 days' worth of history -->
+                    <maxHistory>30</maxHistory>
+                </rollingPolicy>
+
+                <!-- deny all events with a level below DEBUG -->
+                <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                    <level>DEBUG</level>
+                </filter>
+
+                <encoder>
+                    <pattern>%d %-5level [%thread] %logger{10} \(%line\) %msg%n</pattern>
+                </encoder>
+            </appender>
+
+            <appender name="ERRORLOGFILE"
+                      class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${catalina.base}/logs/${app.name}-error.log</file>
+
+                <!-- deny all events with a level below ERROR -->
+                <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+                    <level>ERROR</level>
+                </filter>
+
+                <rollingPolicy
+                        class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                    <!-- daily rollover -->
+                    <fileNamePattern>
+                        ${catalina.base}/logs/${app.name}-error.%d.log.gz
+                    </fileNamePattern>
+
+                    <!-- keep 30 days' worth of history -->
+                    <maxHistory>30</maxHistory>
+                </rollingPolicy>
+
+                <encoder>
+                    <pattern>%d %-5level [%thread] %logger{10} \(%line\) %msg%n</pattern>
+                </encoder>
+            </appender>
+
+            <appender name="PERFORMANCELOGFILE"
+                      class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${catalina.base}/logs/${app.name}-performance.log</file>
+
+                <rollingPolicy
+                        class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+                    <fileNamePattern>
+                        ${catalina.base}/logs/${app.name}-performance.%i.log.gz
+                    </fileNamePattern>
+                    <minIndex>1</minIndex>
+                    <maxIndex>3</maxIndex>
+                </rollingPolicy>
+
+                <triggeringPolicy
+                        class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+                    <maxFileSize>10MB</maxFileSize>
+                </triggeringPolicy>
+
+                <encoder>
+                    <pattern>%d %-5level [%thread] %logger{10} \(%line\) %msg%n</pattern>
+                </encoder>
+            </appender>
+
+            <appender name="MATCHINGLOGFILE"
+                      class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${catalina.base}/logs/matching.log</file>
+                <rollingPolicy
+                        class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+                    <fileNamePattern>
+                        ${catalina.base}/logs/matching.%i.log.gz
+                    </fileNamePattern>
+                    <minIndex>1</minIndex>
+                    <maxIndex>3</maxIndex>
+                </rollingPolicy>
+                <triggeringPolicy
+                        class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+                    <maxFileSize>10MB</maxFileSize>
+                </triggeringPolicy>
+                <encoder>
+                    <pattern>%d %-5level [%thread] %logger{10} \(%line\) %msg%n</pattern>
+                </encoder>
+            </appender>
+            <logger name="de.binaerebauten.gleichklang.adminweb.service.matching"
+                    level="DEBUG">
+                <appender-ref ref="MATCHINGLOGFILE"/>
+            </logger>
+
+            <appender name="HEIDELPAYLOGFILE"
+                      class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${catalina.base}/logs/heidelpay.log</file>
+                <rollingPolicy
+                        class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+                    <fileNamePattern>
+                        ${catalina.base}/logs/heidelpay.%i.log.gz
+                    </fileNamePattern>
+                    <minIndex>1</minIndex>
+                    <maxIndex>3</maxIndex>
+                </rollingPolicy>
+                <triggeringPolicy
+                        class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+                    <maxFileSize>10MB</maxFileSize>
+                </triggeringPolicy>
+                <encoder>
+                    <pattern>%d %-5level [%thread] %logger{10} \(%line\) %msg%n</pattern>
+                </encoder>
+            </appender>
+            <logger name="de.binaerebauten.gleichklang.core.service.payment.heidelpay"
+                    level="DEBUG">
+                <appender-ref ref="HEIDELPAYPUSHLOGFILE"/>
+            </logger>
+
+            <appender name="MYSQLSLOWQUERY"
+                      class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <file>${catalina.base}/logs/${app.name}-slow-query.log</file>
+
+                <rollingPolicy
+                        class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+                    <fileNamePattern>
+                        ${catalina.base}/logs/${app.name}-slow-query.%i.log.gz
+                    </fileNamePattern>
+                    <minIndex>1</minIndex>
+                    <maxIndex>3</maxIndex>
+                </rollingPolicy>
+
+                <triggeringPolicy
+                        class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+                    <maxFileSize>10MB</maxFileSize>
+                </triggeringPolicy>
+
+                <encoder>
+                    <pattern>%d %-5level [%thread] %logger{10} %msg%n</pattern>
+                </encoder>
+            </appender>
+            <logger name="MySQL"
+                    level="DEBUG">
+                <appender-ref ref="MYSQLSLOWQUERY"/>
+            </logger>
+        </then>
+    </if>
+
+    <!-- performance logging is disabled, but can be enabled on demand via JMX -->
+    <logger name="performance-monitor-interceptor" level="off">
+        <appender-ref ref="PERFORMANCELOGFILE"/>
+    </logger>
+
+    <!--<logger name="org.springframework.data" level="trace">-->
+    <!--<appender-ref ref="STDOUT" />-->
+    <!--</logger>-->
+    <!--<logger name="org.hibernate" level="DEBUG">-->
+    <!--<appender-ref ref="STDOUT" />-->
+    <!--</logger>-->
+    <logger name="org.hibernate.type" level="off">
+        <!--<appender-ref ref="STDOUT" />-->
+    </logger>
+
+    <root level="INFO">
+        <if condition='isDefined("catalina.base")'>
+            <then>
+                <appender-ref ref="APPLOGFILE"/>
+                <appender-ref ref="ERRORLOGFILE"/>
+            </then>
+        </if>
+
+        <if condition='isNull("spring.profiles.active")'>
+            <!-- only log to the console on local machines -->
+            <then>
+                <appender-ref ref="STDOUT"/>
+            </then>
+        </if>
+    </root>
+</configuration>

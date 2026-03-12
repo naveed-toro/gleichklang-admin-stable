@@ -1,0 +1,25 @@
+This is the mail system at host mail.host.com.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                  The mail system
+
+<test-me@invalid-address.com>: Host or domain name not found. Name service
+   error for name=invalid-address.com type=A: Host not found
+Reporting-MTA: dns; mail.host.com
+X-Postfix-Queue-ID: F12DD19C24D
+X-Postfix-Sender: rfc822; gk@mail.host.com
+Arrival-Date: Fri, 21 Oct 2016 10:29:14 +0200 (CEST)
+
+Final-Recipient: rfc822; test-me@invalid-address.com
+Original-Recipient: rfc822;test-me@invalid-address.com
+Action: failed
+Status: 5.4.4
+Diagnostic-Code: X-Postfix; Host or domain name not found. Name service error
+   for name=invalid-address.com type=A: Host not found

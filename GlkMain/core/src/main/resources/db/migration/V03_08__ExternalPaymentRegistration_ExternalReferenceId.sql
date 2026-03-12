@@ -1,0 +1,1 @@
+CALL ADD_COLUMN('external_payment_registration', 'external_reference_id', 'VARCHAR(255)');

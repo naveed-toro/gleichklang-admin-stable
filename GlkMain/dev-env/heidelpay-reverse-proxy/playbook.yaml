@@ -1,0 +1,41 @@
+- hosts: all
+  gather_facts: yes
+  tasks:
+  - name: ensure apt cache is up to date
+    apt: update_cache=yes
+  - name: ensure packages are installed
+    apt: name={{item}}
+    with_items:
+        nginx
+
+- hosts: all
+  gather_facts: no
+  tasks:
+    - name: nginx server.crt needs to be copied
+      copy:
+        dest: /etc/nginx/
+        src: server.crt
+      notify:
+      - restart nginx
+    - name: nginx server.csr needs to be copied
+      copy:
+        dest: /etc/nginx/
+        src: server.csr
+      notify:
+      - restart nginx
+    - name: nginx server.key needs to be copied
+      copy:
+        dest: /etc/nginx/
+        src: server.key
+      notify:
+      - restart nginx
+    - name: nginx.conf needs to be copied
+      copy:
+        dest: /etc/nginx/
+        src: nginx.conf
+      notify:
+      - restart nginx
+  handlers:
+    - name: restart nginx
+      service: name=nginx state=restarted
+

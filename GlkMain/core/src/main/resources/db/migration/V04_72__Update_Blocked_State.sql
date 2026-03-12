@@ -1,0 +1,1 @@
+update user_ set Blocked_state = 'NOT_BLOCKED';

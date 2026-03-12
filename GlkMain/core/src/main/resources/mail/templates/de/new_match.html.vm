@@ -1,0 +1,12 @@
+Neuer Vermittlungsvorschlag
+#include("include_header.html.vm")
+Hallo $!{user.firstName} $!{user.lastName}
+
+Sie können sich den oder die neuen Vorschläge im Teilnahmebereich anschauen.
+Wenn die Seite aktuell nicht geöffnet ist, loggen Sie sich ein und schauen sich Ihre Vorschläge an.
+
+<a href="https://www.gleichklang.de/teilnehmer">https://www.gleichklang.de/teilnehmer</a>
+
+Wenn Sie keine Benachrichtigungen über neue Vermittlungsvorschläge haben wollen, tragen Sie das bitte in Ihrem Teilnahmebereich unter Meine Teilnahme/Persönliche Daten/Nachrichten ein.
+
+#include("include_footer.html.vm")

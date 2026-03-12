@@ -1,0 +1,11 @@
+Rückbuchung Ihrer Verlängerunsgebühr wegen mangelnder Kontendeckung
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+bei Durchsicht der Bezahltransaktionen haben wir festgestellt, dass für die von Ihnen im Rahmen der automatischen Verlängerung eingezogene Verlängerungsgebühr von ${amount} am ${now} wegen mangelnder Kontendeckung zurück gebucht wurde.
+
+Damit Sie dennoch an der Teilnahmevermittlung bei Gleichklang teilnehmen können, bieten wir Ihnen an, den zurückgebuchten Betrag per Vorabüberweisung zu begleichen.
+
+${paymentInfo}
+
+#include("include_footer.html.vm")

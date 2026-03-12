@@ -1,0 +1,12 @@
+Zahlungserinnerung für die automatische Verlängerung bei Gleichklang
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+Wir hatten Sie bereits angeschrieben und Sie darauf hingewiesen, dass die von Gebühren für die Verlängerung ihrer Mitgliedschaft bei Gleichklang nicht beglichen sind. Bitte seien Sie so freundlich und veranlassen Sie nunmehr eine rasche Überweisung der Gebühren.
+Hier sind zur Erinnerung noch einmal die notwendigen Daten für die Überweisung:
+
+${paymentInfo}
+
+Falls Sie sicher sind, dass Sie den Betrag bereits überwiesen haben, dann wenden Sie sich bitte in einer kurzen Mail an uns, in der Sie uns das genaue Datum Ihrer Zahlung mitteilen. Wir kümmern uns dann um den Verbleib der Zahlung.
+
+#include("include_footer.html.vm")

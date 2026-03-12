@@ -1,0 +1,12 @@
+Re:${subject}
+#include("include_header.html.vm")
+Sie haben sich an den Gleichklang-Support mit einer Anfrage gewandt. Diese Antfrage möchten wir Ihnen hiermit beantworten.
+
+<b>Unsere Antwort:</b>
+${messagetext} <b>Ihre ursprüngliche Anfrage lautete:</b>
+${oldMessage}
+
+Loggen Sie sich hier bei Gleichklang ein:
+<a href="https://gleichklang.de/teilnehmer/?login">https://gleichklang.de/teilnehmer/?login</a>
+${signature}
+

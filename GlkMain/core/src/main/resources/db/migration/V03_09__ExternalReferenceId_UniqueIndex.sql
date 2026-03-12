@@ -1,0 +1,2 @@
+CALL CREATE_UNIQUE_INDEX('payment_external_reference_id_idx', 'payment', 'external_reference_id');
+CALL CREATE_UNIQUE_INDEX('external_payment_registration_external_reference_id_idx', 'external_payment_registration', 'external_reference_id');

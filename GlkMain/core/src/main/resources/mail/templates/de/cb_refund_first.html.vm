@@ -1,0 +1,12 @@
+Rückbuchung Ihrer Teilnahmegebühr trotz Rückerstattung
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+Sie haben die Teilnahme bei Gleichklang gekündigt und um Rückerstattung gebeten, der wir auch nachgekommen sind. Leider haben Sie trotzdem eine Rückbuchung veranlasst, was zum einen dazu führte, dass der Zahlbetrag {{{field:currencyorigamount}}} Ihrem Konto jetzt zwei mal gutgeschrieben wurde und dass zum Anderen zusätzliche Kosten in Höhe von {{{field:currencycbammount}}} angefallen sind. Wir bitten Sie daher, den resultierenden Betrag von {{{field:currencyamount}}} auf die untenstehende Kontoverbindung zu überweisen.
+
+${paymentInfo}
+
+Hinweis zur Rückbuchung:
+Bitte bedenken Sie, dass Rückbuchungen nur dann legitim sind, wenn ein Unternehmen bei Ihnen unberechtigt abgebucht hat. Nur in diesem Fall können Sie eine Rückbuchung veranlassen und dem Unternehmen, welches illegitim abbuchte, werden die entstandenen Kosten in Rechnung gestellt. Wir hatten aber Ihre Erlaubnis zur Abbuchung, so dass Sie den Betrag nicht rückbuchen durften. Natürlich werden von uns berechtigte Ansprüche immer erstattet, wobei wir sowieso grundsätzlich kulant sind. Sie waren aber an uns nicht herangetreten, sondern hatten einfach eine Rückbuchung veranlasst. Dadurch sind uns nun die oben genannten Kosten enstanden um deren baldige Überweisung wir bitten.
+
+#include("include_footer.html.vm")

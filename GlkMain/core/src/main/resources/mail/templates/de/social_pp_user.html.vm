@@ -1,0 +1,13 @@
+Ihre Anfrage wegen des Sozialtarifs
+#include("include_header.html.vm")
+Hallo ${user.alias},
+
+Sie haben eine Anfrage wegen des Sozialtarifs gestellt.
+
+Da Sie sich bereits angemeldet haben und die Zahlung per Vorabüberweisung gewählt haben, ist es nur noch möglich, dass Sie den Sozialtarif bei der Bezahlung der bereits abgeschlossenen Vorabüberweisung berücksichtigen.
+
+Überweisen Sie statt des ausgewiesenen Betrags also 6 EUR, 12 EUR, 18 EUR oder 24 EUR. Je nachdem, was Sie erübrigen können. Wir erkennen das beim Eingang der Zahlung, wenn der Verwendungszweck korrekt angegeben ist.
+
+Wir bedanken uns für Ihr Interesse bei Gleichklang und wünschen Ihnen viel Erfolg und Glück bei uns!
+
+#include("include_footer.html.vm")
