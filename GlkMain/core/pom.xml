@@ -390,7 +390,7 @@
 			<!--This profile enables the generation of the h2-schema.sql file -->
 			<id>generate-h2-schema</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<activeByDefault>false</activeByDefault>
 			</activation>
 
 			<properties>
